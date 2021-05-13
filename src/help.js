@@ -1,13 +1,13 @@
 const help = (prefix) => {
 	return `
 <══════════════════════>
-      *CAUSS BOT*
+      *DECIM BOT*
  <══════════════════════>
 
 __█████████  ● ᏴϴͲ●ᎷᎬΝႮ●         
-__█▄█████▄█   *DONO*    : CAUSS
+__█▄█████▄█   *DONO*   : SLA
 __█▼▼▼▼▼█ 
-_██ᏴϴͲ Ꮩ3.8██▌ 
+_██SLA 0.2██▌ 
 __█▲▲▲▲▲█ 
 __█████████ 
 ____██_____██
@@ -15,9 +15,9 @@ ____██_____██
 ┌─────────❶.❷────────
 ║〘 INFORMAÇÕES 〙
 ║
-╠🐉 *CAUSS BOT* 
-╠🐉 𝐃𝐎𝐍𝐎:  ⃬⃗CAUSS (base dark) 
-╠🐉 *wa.me/+5547992091566*
+╠🐉 *DECIM BOT* 
+╠🐉 𝐃𝐎𝐍𝐎:  ⃬⃬⃬⃬⃬⃬⃬⃬⃬⃬⃬⃬⃬⃬⃬⃬⃬⃬⃬⃬⃬⃬⃬⃬⃬⃬⃬⃬⃗⃗⃗⃗⃗⃗⃗⃗⃗⃗⃗⃗⃗⃗⃗⃗⃗⃗⃗⃗⃗⃗⃗⃗⃗⃗⃗⃗SLA (base dark) 
+╠🐉 *wa.me/+5511966491483*
 ╠🐉 𝐒𝐓𝐀𝐓𝐔𝐒: ON
 ║
 ║
@@ -226,18 +226,18 @@ ____██_____██
 ║🐊 *gemidao*
 ║🐊 *musica*
 ║
-╠══🐰〘 CAUSS NO CONTROLE 〙🐰══
+╠══🐰〘 SLA NO CONTROLE 〙🐰══
 ║
-║ *NOME: CAUSS*
-║ *INSTA: animexx_png*
-║ *WPP: wa.me/+5547992091566*
-║ *YOUTUBE: https://youtube.com/c/caussZ*
+║ *NOME: SLA*
+║ *INSTA: sla_slazinn*
+║ *WPP: wa.me/+5511966491483*
+║ *YOUTUBE: https://youtube.com/channel/UCzgVI-USrxFe9azve69NATw*
 ║
 ║  *"base do lindo (DARK BOT 4.0)🐊🚩*
-║  *"kiba não xereka"*
+║  *"kiba não"*
 ║  *Número do dark: wa.me/+5522996215481
 ║
-╚═〘 CAUSS BOT 〙`
+╚═〘 DECIM BOT 〙`
 }
 
 exports.help = help
