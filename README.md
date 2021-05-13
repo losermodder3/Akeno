@@ -9,7 +9,7 @@
 ## Clone esse projeto
 
 ```bash
-> git clone https://github.com/admcauss-alt/Caussx
+> git clone https://github.com/CoelhoTv76/Decim
 ```
 
 ## Instale o BOT:
@@ -20,8 +20,8 @@
 > pkg install ffmpeg
 > pkg install wget
 > pkg install nodejs
-> git clone https://github.com/admcauss-alt/Caussx
-> cd Caussx
+> git clone https://github.com/CoelhoTv76/Decim
+> cd Decim
 > bash install.sh
 ```
 
