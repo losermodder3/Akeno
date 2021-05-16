@@ -1,28 +1,25 @@
 const help = (prefix) => {
 	return `
 <═══════//////////--------
-      RIAS GREMORY
+    Akeno Himejima💜
 ══════════════════════
-
-      𝙱𝙾𝚃 𝙼𝙴𝙽𝚄
+  Akeno Himejima
 ┌─────────🍭────────
-║〘 INFORMAÇÕES 〙
-║
-╠☘️  RIAS GREMORY
-╠☘️ 𝐃𝐎𝐍𝐎:  ㇱｌｏｓｅｒㇱ
-╠☘️ wa.me/+15877730070
-╠☘️ 𝐒𝐓𝐀𝐓𝐔𝐒: ON
+║〘 INFO🍁
+╠🍁 𝐃𝐎𝐍𝐎:  ㇱｌｏｓｅｒㇱ
+╠🍁 wa.me/+15877730070
+╠🍁 𝐒𝐓𝐀𝐓𝐔𝐒: ON
 ║
 ║
 ╠══♤〘 MENU 〙♤══
 ║
-║🍭 *${prefix}figu*
-║🍭 *${prefix}toimg*
-║🍭 *${prefix}darkjokes (memes aleatórios)*
-║🍭 *${prefix}memeindo*
-║🍭 *${prefix}tts*
-║🍭 *${prefix}lolih [on]*
-║🍭 *${prefix}nsfwloli [off]*
+╠🍁*${prefix}figu*
+║🍁 *${prefix}toimg*
+║🍁 *${prefix}darkjokes (memes aleatórios)*
+║🍁 *${prefix}memeindo*
+║🍁 *${prefix}tts*
+║🍁 *${prefix}lolih [on]*
+║🍁 *${prefix}nsfwloli [off]*
 ║🍭 *${prefix}url2img*
 ║🍭 *${prefix}leens [na legenda]*
 ║🍭 *${prefix}wait [na legenda]*
@@ -194,7 +191,6 @@ const help = (prefix) => {
 ║🍭 *${prefix}onich*
 ║🍭 *${prefix}beat1*
 ║🍭 *${prefix}glub*
-║🍭 *${prefix}causs*
 ║
 ╠══°~°〘 OUTROS /2 〙¿~¿══
 ║
@@ -223,8 +219,9 @@ const help = (prefix) => {
 ║
 ║ NOME:  ㇱｌｏｓｅｒㇱ
 ║ INSTA: loser_gremory
-║ WPP: wa.me/+15877730070
-║ YOUTUBE: Loser gremory
+║ Rias gremory: wa.me/+15877730070 
+║ akeno Himejima: .......
+║ YOUTUBE: https://youtube.com/channel/UCOjRuKF7S9_y188FQ_F5CbQ
 ║
 ║
 ╚═〘   ㇱｌｏｓｅｒㇱ 〙`
