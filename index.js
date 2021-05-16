@@ -223,7 +223,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Olá @${num.split('@')[0]}\nBem vindo ao grupo *${mdata.subject}*\n\nEspero que goste do grupo ❤️`
+				teks = `Eae @${num.split('@')[0]}\nBem vindo ao clã *${mdata.subject}*\n\nEspero que goste do grupo ❤️`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 				client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
@@ -286,24 +286,24 @@ async function starts() {
 				Iv: '𝗠𝗮𝗮𝗳 𝗹𝗶𝗻𝗸 𝘁𝗶𝗱𝗮𝗸 𝘃𝗮𝗹𝗶𝗱☹️'
 				},
 				only: {
-					group: '[❗] Este comando só pode ser usado em grupos! ❌',
+					group: '[❗]  só em grupos! ❌',
 					premium: '[❗] ESTE PEDIDO É SO PARA *USUÁRIOS PREMIUMS*',
-					mod: '[❗] ESTE PEDIDO É ESPECÍFICO PARA USUARIO MOD CAUSS BOT*',
+					mod: '[❗] ESTE PEDIDO É ESPECÍFICO PARA USUARIO MOD rias BOT*',
 					benned: 'Você para a banda, por favor, contate o proprietário para abrir sua banda',
-					ownerG: '[❗] Causs? Este é um recurso especial para o Causs ❌',
-					ownerB: '[❗] Causs? Este é um recurso especial para o Causs ❌',
-					userB: `──「 LISTA 」──\nOlá Kak !\nDesculpe, irmã. Você não está registrado como amigo de CAUSS. Registre-se para fazer amizade com o bot Causs por meio, \n\nCommand : ${prefix}daftar nama|idade\nExemplo : ${prefix}daftar Causs|17\n\n──「 CAUSS BOT 」──`,
-					admin: '[❗] Este comando só pode ser usado por administradores de grupo! ❌',
-					Badmin: ' [❗] Este comando só pode ser usado quando o bot se torna administrador! ❌',
+					ownerG: '[❗] loser? Este é um recurso especial para o loser ❌',
+					ownerB: '[❗] loser? Este é um recurso especial para o loser ❌',
+					userB: `──「 LISTA 」──\nOlá Kak !\nDesculpe, irmã. Você não está registrado como amigo de rias. Registre-se para fazer amizade com o bot loser por meio, \n\nCommand : ${prefix}daftar nama|idade\nExemplo : ${prefix}daftar Causs|17\n\n──「 CAUSS BOT 」──`,
+					admin: '[❗] so adm irmão! ❌',
+					Badmin: ' [❗] não sou ademiro! ❌',
 				}
 			}
 
 			const botNumber = client.user.jid
-			const ownerNumber = ["5511966491483@s.whatsapp.net"] // replace this with your number
-			const mod = [ownerNumber,"5511966491483@s.whatsapp.net"]//ubah nomor lo
-			const adminbotnumber = ["5511966491483@s.whatsapp.net"]//ubah nomor lo
-			const frendsowner = ["5511966491483@s.whatsapp.net"]//ubah nomor lo
-			const premium = ["5511966491483@s.whatsapp.net","5512982345788@s.whatsapp.net","994402702954@s.whatsapp.net"] 
+			const ownerNumber = ["5521973747709@s.whatsapp.net"] // replace this with your number
+			const mod = [ownerNumber,"5521973747709@s.whatsapp.net"]//ubah nomor lo
+			const adminbotnumber = ["5521973747709@s.whatsapp.net"]//ubah nomor lo
+			const frendsowner = ["5521974747709@s.whatsapp.net"]//ubah nomor lo
+			const premium = ["5521973747709@s.whatsapp.net","5521973747709@s.whatsapp.net","994402702954@s.whatsapp.net"] 
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
@@ -454,7 +454,7 @@ if (text.includes("placa"))
 		}, 1000)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("5 segundo KKKKKKKK tchau otário 😔🤙")
+			reply("5 segundo KKKKKKKK tchau otário kapa kapa")
 		}, 0)
 	}
 	
