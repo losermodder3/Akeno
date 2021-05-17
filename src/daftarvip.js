@@ -10,11 +10,10 @@ const daftarvip = (prefix) => {
 
 *Proprietário do bate-papo BOT :*
 
-_wa.me/554792091566 ou digite *${prefix}owner*_
+_wa.me/5521973747709 ou digite *${prefix}owner*_
 
 *NOTA*
 
-*GRUPO DO SLA 🐰🚩 :*
-https://chat.whatsapp.com/E9zPuWj6KLQ3HhBaZPB411 `
+*GRUPO DO LOSER♠️🚩 :*https://chat.whatsapp.com/I599JMgIess7anNjxy3viB    `
 }
 exports.daftarvip = daftarvip
