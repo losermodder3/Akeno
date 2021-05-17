@@ -1,10 +1,9 @@
 const modapk = () => { 
 	return `
 	*Mod de aplicativo*
-• Quer baixar algo?
 
+presentinho da tia akeno♡
 
-👾 *APROVEITEM*
 
 • Minecraft (Original 1.16)
 
@@ -118,7 +117,7 @@ https://realsht.mobi/iJQbj
 • 100 Font Picsay/Pixelab
 https://realsht.mobi/hrTdE
 
-CAUSS NO CONTROLE 🐊🚩
+Akeno♠️
 `
 }
 exports.modapk = modapk
