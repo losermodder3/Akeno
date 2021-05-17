@@ -1,7 +1,7 @@
 const help1 = (prefix) => {
 
 	return `
-┣━━━━°❀ ❬ *CRIAR* ❭ ❀°━━━━┓
+┣━━━━°❀ ❬ Magias da akeno* ❭ ❀°━━━━┓
 ┃
 ┣⊱❥ *xd*
 ┣⊱❥ *pinterest*
@@ -29,7 +29,6 @@ const help1 = (prefix) => {
 
 ════════════════════
 *LOSERZINHU* ♠️
-*Digite dono para mais info*
 ════════════════════`
 }
 exports.help1 = help1
