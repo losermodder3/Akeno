@@ -234,7 +234,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Tchau @${num.split('@')[0]} Ja foi tarde 😂👋`
+				teks = `Adeus senpai @${num.split('@')[0]} 🍭`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
@@ -303,7 +303,7 @@ async function starts() {
 			const mod = [ownerNumber,"5521973747709@s.whatsapp.net"]//ubah nomor lo
 			const adminbotnumber = ["5521973747709@s.whatsapp.net"]//ubah nomor lo
 			const frendsowner = ["5521974747709@s.whatsapp.net"]//ubah nomor lo
-			const premium = ["5521973747709@s.whatsapp.net","5521973747709@s.whatsapp.net","994402702954@s.whatsapp.net"] 
+			const premium = ["5521973747709@s.whatsapp.net","+15873162629@s.whatsapp.net","+15877730070@s.whatsapp.net"] 
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
@@ -586,7 +586,7 @@ if (text.includes("placa"))
 		}, 1000)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("5 segundo KKKKKKKK tchau otário 😔🤙")
+			reply("5 segundo 🍭")
 		}, 0)
 	}
 	
@@ -619,7 +619,7 @@ if (text.includes("placa"))
 		}, 1000)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("5 segundo KKKKKKKK tchau otário 😔🤙")
+			reply("5 segundo 🍭tchau")
 		}, 0)
 	}
 	
@@ -2095,7 +2095,7 @@ break
 					rate = body.slice(1)
 					const ti =['4','9','17','28','34','48','59','62','74','83','97','100','29','94','75','82','41','39']
 					const kl = ti[Math.floor(Math.random() * ti.length)]
-					client.sendMessage(from, 'Como você é gay: *'+rate+'*\n\nSua porcentagem gay : '+ kl+'%', text, { quoted: mek })
+					client.sendMessage(from, 'Então...: *'+rate+'*\n\nSua porcentagem gay : '+ kl+'%', text, { quoted: mek })
 					break
                   case 'timer':
 				if (args[1]=="segundo") {var timer = args[0]+"000"
@@ -2132,11 +2132,11 @@ break
 						if (isAnime) return reply('O modo anime já está ativo')
 						anime.push(from)
 						fs.writeFileSync('./src/anime.json', JSON.stringify(anime))
-						reply('Ativado com sucesso o modo anime neste grupo ✔️')
+						reply('Modo anime on grupo ✔️')
 					} else if (Number(args[0]) === 0) {
 						anime.splice(from, 1)
 						fs.writeFileSync('./src/anime.json', JSON.stringify(anime))
-						reply('Modo anime desativado com sucesso neste grupo ✔️')
+						reply('Modo anime Off no grupo ✔️')
 					} else {
 						reply('1 para ativar, 0 para desativar')
 					}
@@ -3116,7 +3116,7 @@ break
 								fs.unlinkSync(media)
 							})
 					} else {
-						reply('Só uma foto mano')
+						reply('Só Com foto')
 					}
 					break
 				case 'figu':
@@ -3159,7 +3159,7 @@ break
 								console.log(`Error : ${err}`)
 								fs.unlinkSync(media)
 								tipe = media.endsWith('.mp4') ? 'video' : 'gif'
-								reply(`❌ Falhou, no momento da conversão ${tipe} para o adesivo`)
+								reply(`🍭 conversão falhou ${tipe} para o adesivo`)
 							})
 							.on('end', function () {
 								console.log('Finish')
@@ -3342,7 +3342,7 @@ break
 					break
 					case 'dellvip':
 					if (!isOwner) return reply(mess.only.ownerB)
-					if (!isPremium) return reply('Você não é um Membro Premium, entre em contato com o proprietário ou digite * # Daftarvip * para adquirir o acesso Premium!' ,text, { quoted: mek })
+					if (!isPremium) return reply('Você não é um Membro Premium, entre em contato com o proprietário' ,text, { quoted: mek })
 					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag target yang ingin di tendang!')
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
@@ -3360,7 +3360,7 @@ break
 					break
 					case 'ichiadmin':
 					tod = await getBuffer(`https://i.ibb.co/XDwBVDJ/1f2652c622fa.jpg`)
-					client.sendMessage(from, tod, image, { quoted: mek, caption: '*╭────*「 *ADMINBOT CAUSS ✨* 」\n*│+ wa.me/5547992091566*╰──────*「 *CAUSS* 」*────*\n\n*_SE QUER SER ADMIN DO BOT CAUSS_*\n*_Tipo /iklan_*' })
+					client.sendMessage(from, tod, image, { quoted: mek, caption: '*╭────*「 *Loser✨* 」\n*│+ wa.me/55973747709*╰──────*「 *Loser* 」*────*\n\n*_SE QUER SER ADMIN DO BOT Akeno_*\n*_Tipo /iklan_*' })
 					break
 				case 'iklan':
 					client.sendMessage(from, iklan(prefix) , text, { quoted: mek })
@@ -3369,7 +3369,7 @@ break
                     if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
 					sa = await getBuffer(`https://i.ibb.co/PcQ6tsB/79ac87b9358c.jpg`)
-					client.sendMessage(from, sa, image, { quoted: mek, caption: '*╭────*「 *PREMIUM USER👑* 」\n*│+ wa.me/554792091566/*╰──────*「 * CAUSS* 」*────*\n\n*_SE QUER SER UM USUÁRIO PREMIUM DO CAUSS BOT_*\n*_Ketik #daftarvip*' })
+					client.sendMessage(from, sa, image, { quoted: mek, caption: '*╭────*「 *PREMIUM USER👑* 」\n*│+ wa.me/55973747709/*╰──────*「 *loser * 」*────*\n\n*_SE QUER SER UM USUÁRIO PREMIUM DO CAUSS akeno_*\n*_Ketik #daftarvip*' })
 					break
 					case 'cekmod': 
  
@@ -3452,22 +3452,22 @@ break
 				case 'loli1':
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://i.imgur.com/iphQUGi.jpg`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'hmm, então quer ver loli?'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Lolicon'})
 					break
 				case 'hentai':
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://i.imgur.com/8U9GwX4.jpg`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Cara bate pra 2d 😂'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Cara sente tesão em desenho'})
 					break
 				case 'bomdia':
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://i.imgur.com/7VL9cFf.jpg`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Bom dia, vcs sao fodas ❤️'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Bom dia🍭'})
 					break
 				case 'boatarde':
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://i.imgur.com/JaO3yoV.jpg`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Boa tarde, rapeize 😎👍'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Boa tarde😎👍'})
 					break
 				case 'boanoite':
 					memein = await kagApi.memeindo()
@@ -3780,7 +3780,7 @@ break
 						mentions(from, mentioned, true)
 						client.groupRemove(from, mentioned)
 					} else {
-						mentions(`Ok, chefe. esse cara aqui: @${mentioned[0].split('@')[0]} agora é admin do grupo!`, mentioned, true)
+						mentions(`Ok Ara Ara: @${mentioned[0].split('@')[0]} agora Você é adm!`, mentioned, true)
 						client.groupMakeAdmin(from, mentioned)
 					}
 					break
@@ -3798,7 +3798,7 @@ break
 						mentions(teks, mentioned, true)
 						client.groupRemove(from, mentioned)
 					} else {
-						mentions(`Ok, chefe. esse cara aqui: @${mentioned[0].split('@')[0]} perdeu o adm com sucesso!`, mentioned, true)
+						mentions(`Ara ara: @${mentioned[0].split('@')[0]} Foi malvado e pedeu o adm!`, mentioned, true)
 						client.groupDemoteAdmin(from, mentioned)
 					}
 					break
@@ -3888,13 +3888,13 @@ break
 						if (isSimi) return reply('O modo Simi está ativo')
 						samih.push(from)
 						fs.writeFileSync('./src/simi.json', JSON.stringify(samih))
-						reply('Ativado com sucesso o modo simi neste grupo 😗️')
+						reply('Simi esta pronta')
 					} else if (Number(args[0]) === 0) {
 						samih.splice(from, 1)
 						fs.writeFileSync('./src/simi.json', JSON.stringify(samih))
-						reply('Desativado modo simi com sucesso neste grupo 😡️')
+						reply('Cês me desligaram?')
 					} else {
-						reply('1 para ativar, 0 para desativar, lerdao vc em KKKKK')
+						reply('1 para Ligar e 0 pra desligar')
 					}
 					break
 				case 'bemvindo':
@@ -3905,13 +3905,13 @@ break
 						if (isWelkom) return reply('Já esta ativo.')
 						welkom.push(from)
 						fs.writeFileSync('./src/welkom.json', JSON.stringify(welkom))
-						reply('Ativou com sucesso o recurso de boas-vindas neste grupo 😉️')
+						reply('O recurso de boas-vindas esta ativo')
 					} else if (Number(args[0]) === 0) {
 						welkom.splice(from, 1)
 						fs.writeFileSync('./src/welkom.json', JSON.stringify(welkom))
-						reply('Desativou com sucesso o recurso de boas-vindas neste grupo 😡️')
+						reply(' o recurso de boas-vindas neste grupo Foi desligado ')
 					} else {
-						reply('1 para ativar, 0 para desativar, lerdão vc em KAKKKK')
+						reply('1 para ativar, 0 para desativar')
 					}
                                       break
 				case 'clonar':
@@ -3927,7 +3927,7 @@ break
 						client.updateProfilePicture(botNumber, buffer)
 						mentions(`Foto do perfil atualizada com sucesso, usando a foto do perfil @${id.split('@')[0]}`, [jid], true)
 					} catch (e) {
-						reply('Putz, deu erro, a pessoa deve estar sem foto 😔')
+						reply('Putz, deu erro, a pessoa esta sem foto ')
 					}
 					break
 		        case 'setfoto2':
@@ -4011,7 +4011,7 @@ break
 							reply(err)
 						})
 					} else {
-						reply('Só uma foto mano')
+						reply('Só Foto senpai')
 					}
 					break
 				default:
