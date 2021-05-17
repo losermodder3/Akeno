@@ -1,6 +1,6 @@
 const menu2 = (prefix) => { 
 	return `                 
-╠══✪〘 MENU 〙✪══
+╠══✪〘 menuzinho da akeno 〙✪══
 ║
 ║🍁 *${prefix}figu*
 ║🍁 *${prefix}toimg*
@@ -19,7 +19,6 @@ const menu2 = (prefix) => {
 ║🍁 *${prefix}loli* [off]
 ║🍁 *${prefix}loli1*
 ║🍁 *${prefix}hentai*
-║🍁 *${prefix}dono*
 ║🍁 *${prefix}porno*
 ║🍁 *${prefix}boanoite*
 ║🍁 *${prefix}bomdia*
@@ -35,7 +34,7 @@ const menu2 = (prefix) => {
 ║🍁 *${prefix}meme*   
 ║🍁 *${prefix}lofi*
 ║🍁 *${prefix}malkova*
-║🍁 *${prefix}canal*
+║🍁 *${prefix}play(name music*
 ║🍁 *${prefix}nsfwloli1*
 ║🍁 *${prefix}reislin*
 ║
@@ -45,6 +44,6 @@ const menu2 = (prefix) => {
 ║🍁 *${prefix}simih 0 (para desativar)*
 ║🍁 *${prefix}simi (sua mensagem)*
 ║
-╠══✪〘 *RIAS GREMORY* 〙✪══`
+╠══✪〘 *Akeno Himejima* 〙✪══`
 }
 exports.menu2 = menu2
