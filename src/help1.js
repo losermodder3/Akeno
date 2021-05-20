@@ -1,7 +1,7 @@
 const help1 = (prefix) => {
 
 	return `
-┣━━━━°❀ ❬ Magias da akeno* ❭ ❀°━━━━┓
+┣━━━━°❀ ❬ Magias da Rias* ❭ ❀°━━━━┓
 ┃
 ┣⊱❥ *xd*
 ┣⊱❥ *pinterest*
