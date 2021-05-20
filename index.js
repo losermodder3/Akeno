@@ -234,7 +234,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Adeus senpai @${num.split('@')[0]} 🍭`
+				teks = `Adeus senpai @${num.split('@')[0]} ate logo 🍭`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
@@ -3892,7 +3892,7 @@ break
 					} else if (Number(args[0]) === 0) {
 						samih.splice(from, 1)
 						fs.writeFileSync('./src/simi.json', JSON.stringify(samih))
-						reply('Rias saindo de fininho?')
+						reply('Rias saindo de fininho')
 					} else {
 						reply('1 para Ligar e 0 pra desligar')
 					}
