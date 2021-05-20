@@ -19,7 +19,7 @@ const menu2 = (prefix) => {
 ╠➸ *${prefix}loli* [off]
 ╠➸ *${prefix}loli1*
 ╠➸ *${prefix}hentai*
-╠➸ *${prefix}dono*
+╠➸ *${prefix}*
 ╠➸ *${prefix}porno*
 ╠➸ *${prefix}boanoite*
 ╠➸ *${prefix}bomdia*
@@ -45,6 +45,6 @@ const menu2 = (prefix) => {
 ╠➸ *${prefix}simih 0 (para desativar)*
 ╠➥ *${prefix}simi (sua mensagem)*
 ║
-╠══✪〘 *LOSER* 〙✪══`
+╠══✪〘 *𝐑𝐢𝐚𝐬 𝐆𝐫𝐞𝐦𝐨𝐫𝐲* 〙✪══`
 }
 exports.menu2 = menu2
