@@ -63,8 +63,8 @@ const help = (prefix) => {
 ║38 *${prefix}bemvindo [1/0]*
 ║39 *${prefix}clonar [@]*
 ║40 *${prefix}help1*
-║41 *${prefix}dono*
-║42 *${prefix}owner*
+║41 *${prefix}*
+║42 *${prefix}*
 ║43 *${prefix}tts [texto]*
 ║44 *${prefix}setnome*
 ║45 *${prefix}termux*
@@ -82,7 +82,7 @@ const help = (prefix) => {
 ║54 *${prefix}loli* [off]
 ║55 *${prefix}loli1*
 ║56 *${prefix}hentai*
-║57 *${prefix}dono*
+║57 *${prefix}*
 ║58 *${prefix}porno*
 ║59 *${prefix}boanoite*
 ║60 *${prefix}bomdia*
