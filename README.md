@@ -9,10 +9,10 @@
 ## Clone esse projeto
 
 ```bash
-> git clone https://github.com/CoelhoTv76/Decim
+> git clone https://github.com/losermodder2/Decim
 ```
 
-## Instale o BOT:
+## fazer a rias funfar use os comando:
 
 ```bash
 > termux-setup-storage
@@ -20,7 +20,7 @@
 > pkg install ffmpeg
 > pkg install wget
 > pkg install nodejs
-> git clone https://github.com/CoelhoTv76/Decim
+> git clone https://github.com/losermodder2/Decim
 > cd Decim
 > bash install.sh
 ```
