@@ -3888,11 +3888,11 @@ break
 						if (isSimi) return reply('O modo Simi está ativo')
 						samih.push(from)
 						fs.writeFileSync('./src/simi.json', JSON.stringify(samih))
-						reply('Simi esta pronta')
+						reply('RIAS chegando')
 					} else if (Number(args[0]) === 0) {
 						samih.splice(from, 1)
 						fs.writeFileSync('./src/simi.json', JSON.stringify(samih))
-						reply('Cês me desligaram?')
+						reply('Rias se despedindo?')
 					} else {
 						reply('1 para Ligar e 0 pra desligar')
 					}
@@ -3927,7 +3927,7 @@ break
 						client.updateProfilePicture(botNumber, buffer)
 						mentions(`Foto do perfil atualizada com sucesso, usando a foto do perfil @${id.split('@')[0]}`, [jid], true)
 					} catch (e) {
-						reply('Putz, deu erro, a pessoa esta sem foto ')
+						reply('ooh, a pessoa esta sem foto ')
 					}
 					break
 		        case 'setfoto2':
