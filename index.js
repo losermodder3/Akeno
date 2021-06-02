@@ -294,7 +294,7 @@ async function starts() {
 					ownerB: '[❗] loser? Este é um recurso especial para o loser ❌',
 					userB: `──「 LISTA 」──\nOlá Kak !\nDesculpe, irmã. Você não está registrado como amigo de rias. Registre-se para fazer amizade com o bot loser por meio, \n\nCommand : ${prefix}daftar nama|idade\nExemplo : ${prefix}daftar Causs|17\n\n──「 CAUSS BOT 」──`,
 					admin: '[❗] so adm irmão! ❌',
-					Badmin: ' [❗] não sou ademiro! ❌',
+					Badmin: ' [❗] não sou ademira! ❌',
 				}
 			}
 
@@ -3888,7 +3888,7 @@ break
 						if (isSimi) return reply('O modo Simi está ativo')
 						samih.push(from)
 						fs.writeFileSync('./src/simi.json', JSON.stringify(samih))
-						reply('Simi esta pronta')
+						reply('Akeno chegando')
 					} else if (Number(args[0]) === 0) {
 						samih.splice(from, 1)
 						fs.writeFileSync('./src/simi.json', JSON.stringify(samih))
