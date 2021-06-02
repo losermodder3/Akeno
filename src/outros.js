@@ -35,7 +35,7 @@ const iklan = () => {
 ╠➸ *${prefix}marcar2*
 ╠➸ *${prefix}marcar3*
 ║
-╚═〘  *RIAS GREMORY* 〙
+╚═〘  *  𝐀𝐤𝐞𝐧𝐨 𝐡𝐢𝐦𝐞𝐣𝐢𝐦𝐚    * 〙
 `
 }
 exports.iklan = iklan
