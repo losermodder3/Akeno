@@ -28,7 +28,7 @@ const help1 = (prefix) => {
 ┣⊱❥ *firetext*
 
 ════════════════════
-*LOSERZINHU* ♠️
+*  𝐀𝐤𝐞𝐧𝐨 𝐡𝐢𝐦𝐞𝐣𝐢𝐦𝐚  * ♠️
 ════════════════════`
 }
 exports.help1 = help1
