@@ -46,7 +46,6 @@ const help = (prefix) => {
 ║🍁 *${prefix}bemvindo [1/0]*
 ║🍁 *${prefix}clonar [@]*
 ║🍁 *${prefix}help1*
-║🍁 *${prefix}dono*
 ║🍁 *${prefix}owner*
 ║🍁 *${prefix}tts [texto]*
 ║🍁 *${prefix}setnome*
@@ -65,19 +64,11 @@ const help = (prefix) => {
 ║🍁 *${prefix}loli* [off]
 ║🍁 *${prefix}loli1*
 ║🍁 *${prefix}hentai*
-║🍁 *${prefix}dono*
 ║🍁 *${prefix}porno*
 ║🍁 *${prefix}boanoite*
 ║🍁 *${prefix}bomdia*
 ║🍁 *${prefix}boatarde*
 ║🍁 *${prefix}mia [aleatórias]*
-║🍁 *${prefix}rize [aleatórias]*
-║🍁 *${prefix}minato [aleatórias]*
-║🍁 *${prefix}boruto [aleatórias]*
-║🍁 *${prefix}hinata [aleatórias]*
-║🍁 *${prefix}sasuke [aleatórias]*
-║🍁 *${prefix}sakura [aleatórias]*
-║🍁 *${prefix}naruto [aleatórias]*
 ║🍁 *${prefix}meme*   
 ║🍁 *${prefix}lofi*
 ║🍁 *${prefix}malkova*
@@ -86,11 +77,10 @@ const help = (prefix) => {
 ║🍁 *${prefix}reislin*
 ║
 ╠══♡〘 INTELIGÊNCIA 〙♡══
-║
+║🍁  off fds
 ║🍁 *${prefix}simih 1 (para ativar)*
 ║🍁 *${prefix}simih 0 (para desativar)*
-║🍁 *${prefix}simi (sua mensagem)*
-║
+║🍁 *${prefix}simi (sua mensagem)* 
 ╠══◇〘 EM PRODUÇÃO 〙◇══
 ║
 ║🍁 *${prefix}gado*
@@ -144,7 +134,6 @@ const help = (prefix) => {
 ║
 ║🍁 *${prefix}bug [sua mensagem]*
 ║🍁 *${prefix}clonar [@]*
-║🍁 *${prefix}dono*
 ║🍁 *${prefix}ping [ver velocidade do bot]*
 ║🍁 *${prefix}termux*
 ║🍁 *${prefix}gay [@]*
@@ -182,15 +171,8 @@ const help = (prefix) => {
 ║
 ╠══▪︎~▪︎〘 COMANDOS DE VOZ 〙♡~♡══
 ║
-║🍁 *${prefix}ola*
-║🍁 *${prefix}bv*
-║🍁 *${prefix}tchau*
-║🍁 *${prefix}bem*
-║🍁 *${prefix}a*
-║🍁 *${prefix}fdp*
 ║🍁 *${prefix}onich*
 ║🍁 *${prefix}beat1*
-║🍁 *${prefix}glub*
 ║
 ╠══°~°〘 OUTROS /2 〙¿~¿══
 ║
@@ -204,22 +186,13 @@ const help = (prefix) => {
 ║
 ╠══NOTA »
 ║Mandar a msg sem o prefixo
-╠════════════════════
-║
-║🍁 *bah*
-║🍁 *oii*
-║🍁 *bv*
-║🍁 *canta ai bot*
-║🍁 *grita*
-║🍁 **
-║🍁 *gemidao*
-║🍁 *musica*
+╠═══════════════════
 ║
 ║╠══🥶〘 𝗗𝗢𝗡𝗢 〙🥶══
 ║
 ║ NOME:  ㇱｌｏｓｅｒㇱ
 ║ INSTA: loser_gremory
-║ Rias gremory: wa.me/+15877730070 
+║ Rias gremory: wa.me/+15874151789
 ║ akeno Himejima: .......
 ║ YOUTUBE: https://youtube.com/channel/UCOjRuKF7S9_y188FQ_F5CbQ
 ║
