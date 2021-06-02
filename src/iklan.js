@@ -12,7 +12,7 @@ const iklan = () => {
 ╠➥ *VANTAGENS*
 ╠➥ *wa.me/5521973747709*
 ║
-╚═〘  loser  〙
+╚═〘  𝐀𝐤𝐞𝐧𝐨 𝐡𝐢𝐦𝐞𝐣𝐢𝐦𝐚   〙
 `
 }
 exports.iklan = iklan
