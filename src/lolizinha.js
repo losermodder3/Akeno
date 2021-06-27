@@ -10,7 +10,5 @@
 {"result": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJx3_Q_fovQX1onE1LjBjzp8xE6nizBAPeKQ&usqp=CAU"},
 {"result": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWERjoDzf4mhC5qJ_GtbUJbUJjl1jA6XeXRg&usqp=CAU"}'
 {"result": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLEFUkXPZQZ0AjfsGP1ICCcfxG0-K1ZmfY6A&usqp=CAU"}'
-{"result": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyKTT0IEmQaFCD2O3PzKme9vwg9USnkQ24Hw&usqp=CAU"}'
-{"result": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq0Juzz9BzDd3WTsBtXcKL8mL-JCzY70DWHA&usqp=CAU"}'
 ]
 
