@@ -729,7 +729,7 @@ if (text.includes("placa"))
 	
 				if (messagesC.includes("mandememe")){
 			client.updatePresence(from, Presence.composing)
-			data = fs.readFileSync('./src/darkjokes.js');
+			data = fs.readFileSync('./src/lolizinha.js');
                  jsonData = JSON.parse(data);
                  randIndex = Math.floor(Math.random() * jsonData.length);
                  randKey = jsonData[randIndex];
@@ -1658,10 +1658,10 @@ if (text.includes("placa"))
                       if (!isPremium) return reply(mess.only.premium)
                       if (pesan.length > 5000) return client.sendMessage(from, 'ate 5k de caracteres', msgType.text, {quoted: mek})
                         var nomor = mek.participant
-                       const teks1 = `*[TRAVA🐊🚩]*\nTRAVADO POR : @${nomor.split("@s.whatsapp.net")[0]}\nMensagem : ${pesan}`
-                       const teks2 = `*[TRAVA🐊🚩]*\nTRAVADO POR : @${nomor.split("@s.whatsapp.net")[0]}\nMensagem : ${pesan}`
-                       const teks3 = `*[TRAVA🐊🚩]*\nTRAVADO POR : @${nomor.split("@s.whatsapp.net")[0]}\nMensagem : ${pesan}`
-                       const teks4 = `*[TRAVA🐊🚩]*\nTRAVADO POR : @${nomor.split("@s.whatsapp.net")[0]}\nMensagem : ${pesan}`
+                       const teks1 = `*[TRAVA🍭]*\nTRAVADO POR : @${nomor.split("@s.whatsapp.net")[0]}\nMensagem : ${pesan}`
+                       const teks2 = `*[TRAVA🍭🚩]*\nTRAVADO POR : @${nomor.split("@s.whatsapp.net")[0]}\nMensagem : ${pesan}`
+                       const teks3 = `*[TRAVA🍭🚩]*\nTRAVADO POR : @${nomor.split("@s.whatsapp.net")[0]}\nMensagem : ${pesan}`
+                       const teks4 = `*[TRAVA🍭🚩]*\nTRAVADO POR : @${nomor.split("@s.whatsapp.net")[0]}\nMensagem : ${pesan}`
                       var options = {
                          text: teks1,
                          text: teks2,
@@ -1764,7 +1764,7 @@ if (text.includes("placa"))
                     await limitAdd(sender)
 					break
                 case 'lolizinha':
-				 data = fs.readFileSync('./src/darkjokes.js');
+				 data = fs.readFileSync('./src/lolizinha.js');
                  jsonData = JSON.parse(data);
                  randIndex = Math.floor(Math.random() * jsonData.length);
                  randKey = jsonData[randIndex];
@@ -3598,7 +3598,7 @@ break
 				case 'dono':
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4V_4fdvF8rluX0T3KKGOvY0TusMwx7nVWtw&usqp=CAU`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*CRIADOR:* CAUSS\n*YOUTUBE:* https://youtube.com/channel/UCpB3qh2Sp3K23s9a2Q-Gf-g\n*WPP:* wa.me/+5547992091566\n*INSTA:* @animexx_png\n\n\nEspero que tenham gostado do bot 🐊🚩️'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*CRIADOR:* Loserzinho\n*YOUTUBE:* https://youtube.com/channel/UCOjRuKF7S9_y188FQ_F5CbQ\n*WPP:* wa.me/+5521973747709\n*INSTA:* @loserzinn\n\n\nEspero que goste da rias'})
 					break
 				case 'setprefix':
 					if (args.length < 1) return
