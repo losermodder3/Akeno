@@ -64,7 +64,7 @@ const help = (prefix) => {
 ╠🌸 *${prefix}loli* [off]
 ╠🌸 *${prefix}loli1*
 ╠🌸 *${prefix}hentai*
-╠🌸 *${prefix}dono*
+╠🌸 *${prefix}loser*
 ╠🌸 *${prefix}porno*
 ╠🌸 *${prefix}boanoite*
 ╠🌸 *${prefix}bomdia*
@@ -207,15 +207,11 @@ const help = (prefix) => {
 ╠🌸 *bah*
 ╠🌸 *oii*
 ╠🌸 *bv*
-╠🌸 *gemidao*
-╠🌸 *musica*
 ║
 ║╠══🍁〘 𝗗𝗢𝗡𝗢 〙🍁══
 ║
 ║ NOME:  ㇱｌｏｓｅｒㇱ
 ║ INSTA: loser_gremory
-║ Rias gremory:.....
-║ akeno Himejima: wa.me/+15873162629
 ║ YOUTUBE: https://youtube.com/channel/UCOjRuKF7S9_y188FQ_F5CbQ
 ║
 ║
