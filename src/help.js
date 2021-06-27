@@ -46,7 +46,7 @@ const help = (prefix) => {
 ╠🌸 *${prefix}bemvindo [1/0]*
 ╠🌸 *${prefix}clonar [@]*
 ╠🌸 *${prefix}help1*
-╠🌸 *${prefix} *
+╠🌸 *${prefix}dono*
 ╠🌸 *${prefix}tts [texto]*
 ╠🌸 *${prefix}setnome*
 ╠🌸 *${prefix}termux*
@@ -64,7 +64,7 @@ const help = (prefix) => {
 ╠🌸 *${prefix}loli* [off]
 ╠🌸 *${prefix}loli1*
 ╠🌸 *${prefix}hentai*
-╠🌸 *${prefix}loser*
+╠🌸 *${prefix}*
 ╠🌸 *${prefix}porno*
 ╠🌸 *${prefix}boanoite*
 ╠🌸 *${prefix}bomdia*
