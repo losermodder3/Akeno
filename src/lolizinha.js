@@ -9,7 +9,6 @@
 {"result": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmsmlWlu3NG505snlYIpfu1d-crewV5DRjUg&usqp=CAU"},
 {"result": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJx3_Q_fovQX1onE1LjBjzp8xE6nizBAPeKQ&usqp=CAU"},
 {"result": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWERjoDzf4mhC5qJ_GtbUJbUJjl1jA6XeXRg&usqp=CAU"}'
-{"result": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLEFUkXPZQZ0AjfsGP1ICCcfxG0-K1ZmfY6A&usqp=CAU"}'
 ]
 
 
