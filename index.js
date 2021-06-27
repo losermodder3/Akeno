@@ -51,14 +51,14 @@ const { limit } = require('./database/menu/limit*/
 const apivhtear = 'apivhtear';
 const apibarbar = 'apibarbar';
 const tobzkey = 'apitobz';
-const BotName = 'Causs bot'; 
+const BotName = 'Loserzinn'; 
 const instagram = 'http://www.instagram.com/'; 
 const aktif = '08:00 - 22:00';
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
-            + 'FN:Causs\n' // Nama kamu
-            + 'ORG:Lexa;\n' // Nama bot
-            + 'TEL;type=CELL;type=VOICE;waid=554792091566:+55 47992091566\n' //Nomor whatsapp kamu
+            + 'FN:Loser\n' // Rias gremory
+            + 'ORG:Lexa;\n' // Riaszinha
+            + 'TEL;type=CELL;type=VOICE;waid=5521973747709:+55 21973747709\n' //Nomor whatsapp kamu
             + 'END:VCARD'
 prefix = '.','!','#'
 blocked = []
@@ -446,15 +446,15 @@ if (text.includes("placa"))
 		}, 3000)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("3 segundos")
+			reply("")
 		}, 2000)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("4 segundos")
+			reply()
 		}, 1000)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("5 segundo KKKKKKKK tchau otário kapa kapa")
+			reply("")
 		}, 0)
 	}
 	
@@ -1524,7 +1524,7 @@ if (text.includes("placa"))
 					for (let V of premium) {
 						teks += `│+  @${V.split('@')[0]}\n`
 					}
-					teks += `│+ Total : ${premium.length}\n╰──────*「 *CAUSS BOT* 」*────`
+					teks += `│+ Total : ${premium.length}\n╰──────*「 *Rias* 」*────`
 					client.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": premium}})
 					break
                   case 'qrcode':
@@ -1763,7 +1763,7 @@ if (text.includes("placa"))
 					client.sendMessage(from, pok, image, { quoted: mek, caption: `*PINTEREST*\n\*Resultado da pesquisa* : *${tels}*`})
                     await limitAdd(sender)
 					break
-                case 'darkjokes':
+                case 'lolizinha':
 				 data = fs.readFileSync('./src/darkjokes.js');
                  jsonData = JSON.parse(data);
                  randIndex = Math.floor(Math.random() * jsonData.length);
@@ -1890,7 +1890,7 @@ break
 				case 'hinata':
 
 					reply(mess.wait)
-					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=Hinata`, {method: 'get'})
+					anu = await fetchJson(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZouSozaQaXxA3n6g9e4-xC03innb9PCExOfJjKT1yuUFlCYzY8q6nvdk&s=10`, {method: 'get'})
 					hina = JSON.parse(JSON.stringify(anu));
 					ta =  hina[Math.floor(Math.random() * hina.length)];
 					nye = await getBuffer(ta)
@@ -1909,7 +1909,7 @@ break
 
 					gay = body.slice(13)
 		   anu = await fetchJson(`https://arugaz.herokuapp.com/api/howgay`, {method: 'get'})
-		   hasil = `Veja os dados do Gay ${gay}\n\n\nPercentagem Gay : ${anu.persen}%\nAlerta!!! : gay, mas não cego`
+		   hasil = `você${gay}\n\n\né : ${anu.persen}%\nAlerta!!! : gay, mas não cego`
 		   reply(hasil)
 		   await limitAdd(sender)
 					break
