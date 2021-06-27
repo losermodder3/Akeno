@@ -52,7 +52,7 @@ const apivhtear = 'apivhtear';
 const apibarbar = 'apibarbar';
 const tobzkey = 'apitobz';
 const BotName = 'Loserzinn'; 
-const instagram = 'http://www.instagram.com/'; 
+const instagram = 'http://www.instagram.com/@loserzinm'; 
 const aktif = '08:00 - 22:00';
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
