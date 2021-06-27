@@ -292,7 +292,7 @@ async function starts() {
 					benned: 'Você para a banda, por favor, contate o proprietário para abrir sua banda',
 					ownerG: '[❗] loser? Este é um recurso especial para o loser ❌',
 					ownerB: '[❗] loser? Este é um recurso especial para o loser ❌',
-					userB: `──「 LISTA 」──\nOlá Kak !\nDesculpe, irmã. Você não está registrado como amigo de rias. Registre-se para fazer amizade com o bot loser por meio, \n\nCommand : ${prefix}daftar nama|idade\nExemplo : ${prefix}daftar Causs|17\n\n──「 CAUSS BOT 」──`,
+					userB: `──「 LISTA 」──\nOlá Kak !\nDesculpe, irmã. Você não está registrado como amigo de rias. Registre-se para fazer amizade com o bot loser por meio, \n\nCommand : ${prefix}daftar nama|idade\nExemplo : ${prefix}daftar Causs|17\n\n──「 Loserzin 」──`,
 					admin: '[❗] so adm irmão! ❌',
 					Badmin: ' [❗] não sou ademira! ❌',
 				}
@@ -2443,7 +2443,7 @@ break
                    break
 					case 'totaluser':
 					if (!isOwner) return reply(mess.only.ownerB)    
-					teks = `\`\`\`╭────*「 *TOTAL DE USUÁRIOS CAUSS BOT 👑* 」\n\`\`\``
+					teks = `\`\`\`╭────*「 *TOTAL DE USUÁRIOS Loserzin 👑* 」\n\`\`\``
 					no = 0
 					for (let hehehe of user) {
 						no += 1
@@ -3211,7 +3211,7 @@ break
 							.toFormat('webp')
 							.save(ran)*/
 					} else {
-						reply(`Envie fotos com legendas *.f* ou marque uma imagem que já foi enviada`)
+						reply(`Envie fotos com  *.f* ou marque uma imagem que já enviada`)
 					}
 					break
 				case 'tts':
@@ -3338,7 +3338,7 @@ break
 					if (!isPremium) return reply('Você não é um Membro Premium, entre em contato com o proprietário ou digite *.Daftarvip* para adquirir o acesso Premium!' ,text, { quoted: mek })
 					me = client.user
 					uptime = process.uptime()
-					client.sendMessage(from,  `*──────────────────*\n*Nome do bot:* CAUSS BOT\n*─────────────────*\n『 *𝐕𝐈𝐏 𝐔𝐒𝐄𝐑*』\n*──────────────────*\n*•Número:* *${sender.split("@s.whatsapp.net")[0]}*\n*•Status:* *ATIVO*\n*──────────────────*\n*Status Bot:* *${kyun(uptime)}*\n\n*VOCE É UM MEMBRO PREMIUM* 🐊🚩\n*──────────────────*` , text, { quoted: mek, })
+					client.sendMessage(from,  `*──────────────────*\n*Nome do bot:* Loserzin\n*─────────────────*\n『 *𝐕𝐈𝐏 𝐔𝐒𝐄𝐑*』\n*──────────────────*\n*•Número:* *${sender.split("@s.whatsapp.net")[0]}*\n*•Status:* *ATIVO*\n*──────────────────*\n*Status Bot:* *${kyun(uptime)}*\n\n*VOCE É UM MEMBRO PREMIUM* 🐊🚩\n*──────────────────*` , text, { quoted: mek, })
 					break
 					case 'dellvip':
 					if (!isOwner) return reply(mess.only.ownerB)
@@ -3597,8 +3597,8 @@ break
                     break
 				case 'dono':
 					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4V_4fdvF8rluX0T3KKGOvY0TusMwx7nVWtw&usqp=CAU`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*CRIADOR:* Loserzinho\n*YOUTUBE:* https://youtube.com/channel/UCOjRuKF7S9_y188FQ_F5CbQ\n*WPP:* wa.me/+5521973747709\n*INSTA:* @loserzinn\n\n\nEspero que goste da rias'})
+					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMYw04FiYaqq2rTT2cL8IaOmMDDCSEWmq37Q&usqp=CAU`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*CRIADOR:* Loserzinho\n*YOUTUBE:*https://youtube.com/channel/UCOjRuKF7S9_y188FQ_F5CbQ\n*WPP:* wa.me/+5521973747709\n*INSTA:* @loserzinn\n\n\nEspero que goste da rias'})
 					break
 				case 'setprefix':
 					if (args.length < 1) return
