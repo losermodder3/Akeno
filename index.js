@@ -4131,6 +4131,7 @@ buffer = await getBuffer(`https://hadi-api.herokuapp.com/api/neko2`)
 client.sendMessage(from, buffer, image, {quoted: mek})
 break
 
+
 //COMANDOS DE PESQUISAS
  case 'pucep':
  //@loserzinn 
@@ -4146,7 +4147,7 @@ Cidade ${send.resultado.localidade}
 Estado ${send.resultado.uf}  
 DDD ${send.resultado.ddd}   
                     
- 
+ `
 client.sendMessage(from, teks, text, {quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": "", "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": fs.readFileSync('kk/sticker/botlogo.webp')}}}})
 break
 case 'wikipedia':
@@ -4157,6 +4158,7 @@ case 'wikipedia':
 	client.sendMessage(from, teks, text, {quoted: mek})
 	break
 case 'pinterest':
+					//@loser
 					client.updatePresence(from, Presence.composing) 
 					data = await fetchJson(`https://fdciabdul.tech/api/pinterest/?keyword=${body.slice(11)}}`)				
 					n = JSON.parse(JSON.stringify(data));
