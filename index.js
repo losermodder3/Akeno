@@ -1752,17 +1752,6 @@ if (text.includes("placa"))
 					}
 					mentions(teks, members_id, true)
 					break
-                case 'pinterest':
-                    tels = body.slice(11)
-					client.updatePresence(from, Presence.composing) 
-					data = await fetchJson(`https://api.fdci.se/rep.php?gambar=${tels}`, {method: 'get'})
-					reply(mess.wait)
-					n = JSON.parse(JSON.stringify(data));
-					nimek =  n[Math.floor(Math.random() * n.length)];
-					pok = await getBuffer(nimek)
-					client.sendMessage(from, pok, image, { quoted: mek, caption: `*PINTEREST*\n\*Resultado da pesquisa* : *${tels}*`})
-                    await limitAdd(sender)
-					break
                 case 'lolizinha':
 				 data = fs.readFileSync('./src/lolizinha.js');
                  jsonData = JSON.parse(data);
@@ -4132,13 +4121,7 @@ kratu = await getBuffer(`https://hadi-api.herokuapp.com/api/photoxy/manga-naruto
 client.sendMessage(from, kratu, image, {quoted: mek})
 break
 
-//COMANDOS NSFW CASE'S BY @loserzinn 
-case 'lolizinhas': // @loserzinn 愛
-reply('Enviando...')
-buffer = await getBuffer(`https://hadi-api.herokuapp.com/api/neko`)
-client.sendMessage(from, buffer, image, {quoted: mek})
-break
-case 'hentai': //@loserzinn 愛
+case 'hentai': //@loserzinn 
 reply('Enviando....')
 buffer = await getBuffer(`https://hadi-api.herokuapp.com/api/neko2`)
 client.sendMessage(from, buffer, image, {quoted: mek})
@@ -4147,21 +4130,6 @@ case 'waifu': //@loserzinn 
 buffer = await getBuffer(`https://hadi-api.herokuapp.com/api/neko2`)
 client.sendMessage(from, buffer, image, {quoted: mek})
 break
-
-//COMANDOS PLAY BY @loserzinn 
-case 'play':   
-//@loserzinn 
-				reply(mess.wait)
-				const play = body.slice(5)
-				anu = await fetchJson(`https://api.zeks.xyz/api/ytplaymp3?q=${play}&apikey=apivinz`)
-				if (anu.error) return reply(anu.error)
-				infomp3 = ` \n\n:\n ${anu.result.title}\n:${anu.result.source}\n: ${anu.result.size}`				
-				buffer = await getBuffer(anu.result.thumbnail)
-			//	client.sendMessage(from, buffer, image, {quoted: mek, caption: infomp3})
-				lagu = await getBuffer(anu.result.url_audio)
-client.sendMessage(from, buffer, image, {quoted: download1, caption: infomp3})
-	client.sendMessage(from, lagu, audio, {mimetype: 'audio/mp4', filename: `${anu.result.title}.mp3`, quoted: download})
-				break
 
 //COMANDOS DE PESQUISAS
  case 'pucep':
@@ -4178,7 +4146,7 @@ Cidade ${send.resultado.localidade}
 Estado ${send.resultado.uf}  
 DDD ${send.resultado.ddd}   
                     
- `
+ 
 client.sendMessage(from, teks, text, {quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": "", "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": fs.readFileSync('kk/sticker/botlogo.webp')}}}})
 break
 case 'wikipedia':
@@ -4189,7 +4157,6 @@ case 'wikipedia':
 	client.sendMessage(from, teks, text, {quoted: mek})
 	break
 case 'pinterest':
-					//@loser
 					client.updatePresence(from, Presence.composing) 
 					data = await fetchJson(`https://fdciabdul.tech/api/pinterest/?keyword=${body.slice(11)}}`)				
 					n = JSON.parse(JSON.stringify(data));
