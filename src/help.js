@@ -28,6 +28,8 @@ const help = (prefix) => {
 ╠🌸 *${prefix}attp4(seu texto)*
 ╠🌸 *${prefix}lolizinha*
 ╠🌸 *${prefix}pinterest(nome do personagem)*
+╠🌸 *${prefix}Rias*
+╠🌸 *${prefix}wait(legenda foto de anime)
 ╠══♧〘 OUTROS 〙♧══
 ║
 ╠🌸 *${prefix}linkgp*
@@ -80,8 +82,7 @@ const help = (prefix) => {
 ║
 ╠══◇〘 em produção〙◇══
 ║
-╠🌸 *${prefix}hentai(aleatoria)
-╠🌸 *${prefix}Rias*
+╠🌸 *${prefix}hentai*
 ╠🌸 *${prefix}Egirl*
 ╠🌸 *${prefix}doguinho*
 ╠══♧〘 PREMIUM 〙♧══
@@ -143,7 +144,7 @@ const help = (prefix) => {
 ╠🌸 *${prefix}belle [img aleatórias]*
 ╠🌸 *${prefix}pronomeneu [texto]*
 ╠🌸 *${prefix}hobby*
-╠🌸 *${prefix}analise
+╠🌸 *${prefix}analise*
 ║
 !------- COMANDOS DE VOZ-------
 ╠🌸 *${prefix}onich*
@@ -156,14 +157,9 @@ const help = (prefix) => {
 ╠🌸 *${prefix}antiracismo [on/off]*
 ║
 ╠══◇〘 INTERATIVOS 〙◇══
-║
-╠══NOTA »
-║Mandar a msg sem o prefixo
-║
-╠🌸 *bah*
-╠🌸 *oii*
-╠🌸 *bv*
-║
+║🌸 *amungus*
+╠🌸 *sexo*
+║🌸 *nyampasu*
 ║╠══🍁〘 𝗗𝗢𝗡𝗢 〙🍁══
 ║
 ║ NOME:  ㇱｌｏｓｅｒㇱ
