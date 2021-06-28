@@ -686,15 +686,15 @@ if (text.includes("placa"))
 			reply("oi")
 	}
 	
-			if (messagesC.includes("bah")){
+			if (messagesC.includes("nyampasu")){
 			client.updatePresence(from, Presence.composing)
-			tujuh = fs.readFileSync('./assets/bahc.mp3');
+			tujuh = fs.readFileSync('./assets/Nyanpasu(Rynti M Remix).mp3');
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 	
-				if (messagesC.includes("causs")){
+				if (messagesC.includes("amongus")){
 			client.updatePresence(from, Presence.composing)
-			tujuh = fs.readFileSync('./assets/caussf.mp3');
+			tujuh = fs.readFileSync('./assets/amungus.mp3');
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 	
