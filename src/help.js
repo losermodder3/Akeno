@@ -25,7 +25,7 @@ const help = (prefix) => {
 ╠🌸 *${prefix}wait [na legenda]*
 ╠🌸 *${prefix}setprefix*
 ║
-╠══☆〘 figurinhas com frases〙☆══
+╠══☆〘 NOVOS〙☆══
 ║
 ╠🌸 *${prefix}attp1(seu texto)*
 ╠🌸 *${prefix}attp2(seu texto)*
@@ -91,14 +91,13 @@ const help = (prefix) => {
 ╠🌸 *${prefix}simih 0 (para desativar)*
 ╠🌸 *${prefix}simi (sua mensagem)*
 ║
-╠══◇〘 Novos 〙◇══
+╠══◇〘 em produção〙◇══
 ║
-╠🌸 *${prefix}gtts loli*
+╠🌸 *${prefix}hentai(aleatoria)
 ╠🌸 *${prefix}Rias*
-╠🌸 *${prefix}Koneko*
-╠🌸 *${prefix}Hinata+18
-╠🌸 *${prefix}
-╠🌸 *${prefix}
+╠🌸 *${prefix}Egirl*
+╠🌸 *${prefix}doguinho*
+╠🌸 *${prefix}losernsfw(menu+18)
 ╠══♧〘 SÓ PREMIUM 〙♧══
 ║
 ╠🌸 *${prefix}dado*
@@ -180,13 +179,12 @@ const help = (prefix) => {
 ╠🌸 *${prefix}brainly [pergunta]*
 ╠🌸 *${prefix}antiracismo [on/off]*
 ╠🌸 *${prefix}setnomebot*
-╠🌸 *${prefix}meme*
+╠🌸 *${prefix}losernsfw*
 ║
 ╠══◇〘 INTERATIVOS 〙◇══
 ║
 ╠══NOTA »
 ║Mandar a msg sem o prefixo
-╠════════════════════
 ║
 ╠🌸 *bah*
 ╠🌸 *oii*
