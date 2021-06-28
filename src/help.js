@@ -18,12 +18,7 @@ const help = (prefix) => {
 ╠🌸 *${prefix}darkjokes (memes aleatórios)*
 ╠🌸 *${prefix}memeindo*
 ╠🌸 *${prefix}tts*
-╠🌸 *${prefix}lolih [on]*
-╠🌸 *${prefix}nsfwloli [off]*
-╠🌸 *${prefix}url2img*
-╠🌸 *${prefix}leens [na legenda]*
 ╠🌸 *${prefix}wait [na legenda]*
-╠🌸 *${prefix}setprefix*
 ║
 ╠══☆〘 NOVOS〙☆══
 ║
@@ -52,23 +47,17 @@ const help = (prefix) => {
 ╠🌸 *${prefix}limpar*
 ╠🌸 *${prefix}bc [ *texto* ]*
 ╠🌸 *${prefix}bemvindo [1/0]*
-╠🌸 *${prefix}help1*
 ╠🌸 *${prefix}dono*
 ╠🌸 *${prefix}tts [texto]*
-╠🌸 *${prefix}setnome*
-╠🌸 *${prefix}setfoto*
 ╠🌸 *${prefix}grupoinfo*
 ╠🌸 *${prefix}ytmp4*
 ╠🌸 *${prefix}bomdia*
 ╠🌸 *${prefix}boanoite*
 ╠🌸 *${prefix}marcar*
-╠🌸 *${prefix}marcar2*
-╠🌸 *${prefix}marcar3*
 ╠🌸 *${prefix}play(nome da musica)*
 ╠══☆〘 IMAGENS 〙☆══
 ║
 ╠🌸 *${prefix}hentai*
-╠🌸 *${prefix}porno*
 ╠🌸 *${prefix}boanoite*
 ╠🌸 *${prefix}bomdia*
 ╠🌸 *${prefix}boatarde*
@@ -80,9 +69,7 @@ const help = (prefix) => {
 ╠🌸 *${prefix}sasuke*
 ╠🌸 *${prefix}sakura*
 ╠🌸 *${prefix}naruto*
-╠🌸 *${prefix}meme*   
-╠🌸 *${prefix}lofi*
-╠🌸 *${prefix}malkova*
+╠🌸 *${prefix}egirl*  
 ╠🌸 *${prefix}nsfwloli1*
 ║
 ╠══♡〘 INTELIGÊNCIA 〙♡══
@@ -97,8 +84,7 @@ const help = (prefix) => {
 ╠🌸 *${prefix}Rias*
 ╠🌸 *${prefix}Egirl*
 ╠🌸 *${prefix}doguinho*
-╠🌸 *${prefix}losernsfw(menu+18)
-╠══♧〘 SÓ PREMIUM 〙♧══
+╠══♧〘 PREMIUM 〙♧══
 ║
 ╠🌸 *${prefix}dado*
 ╠🌸 *${prefix}cekvip*
@@ -120,20 +106,15 @@ const help = (prefix) => {
 ╠🌸 *${prefix}level*
 ╠🌸 *${prefix}add*
 ╠🌸 *${prefix}promover*
-╠🌸 *${prefix}setfoto [na legenda]*
-╠🌸 *${prefix}setname [texto]*
 ╠🌸 *${prefix}rebaixar*
 ╠🌸 *${prefix}admins*
 ╠🌸 *${prefix}marcar*
-╠🌸 *${prefix}marcar2*
-╠🌸 *${prefix}marcar3*
 ╠🌸 *${prefix}bemvindo [1/0]*
 ╠🌸 *${prefix}grupoinfo*
 ╠🌸 *${prefix}bomdia*
 ╠🌸 *${prefix}boatarde*
 ╠🌸 *${prefix}boanoite*
 ╠🌸 *${prefix}setdesc*
-╠🌸 *${prefix}bug [sua mensagem]*
 ║
 ╠══●〘 ESPECIFICO DO BOT 〙●══
 ║
@@ -141,7 +122,6 @@ const help = (prefix) => {
 ╠🌸 *${prefix}dono*
 ╠🌸 *${prefix}gay [@]*
 ╠🌸 *${prefix}wame*
-╠🌸 *${prefix}setppbot (marque uma img)*
 ╠🌸 *${prefix}desligar (so para o dono)*
 ╠🌸 *${prefix}timer*
 ║
@@ -151,22 +131,18 @@ const help = (prefix) => {
 ╠🌸 *${prefix}ttp [texto]*
 ╠🌸 *${prefix}testime*
 ╠🌸 *${prefix}tomp3*
-╠🌸 *${prefix}modoanime [on/off]*
 ╠🌸 *${prefix}modonsfw [on/off]*
 ╠🌸 *${prefix}happymod [jogo/app]*
 ╠🌸 *${prefix}ytsearch*
 ╠🌸 *${prefix}moddroid [jogo/app]*
-╠🌸 *${prefix}xvideos [titulo]**
 ╠🌸 *${prefix}nomegp*
-╠🌸 *${prefix}darkjokes (memes aleatórios)*
-╠🌸 *${prefix}animecry*
+╠🌸 *${prefix}lolizinha*
 ╠🌸 *${prefix}gay1*
 ╠🌸 *${prefix}next*
 ╠🌸 *${prefix}alerta*
 ╠🌸 *${prefix}belle [img aleatórias]*
 ╠🌸 *${prefix}pronomeneu [texto]*
 ╠🌸 *${prefix}hobby*
-╠🌸 *${prefix}kiss
 ╠🌸 *${prefix}analise
 ║
 !------- COMANDOS DE VOZ-------
@@ -176,10 +152,8 @@ const help = (prefix) => {
 ╠══°~°〘 OUTROS /2 〙¿~¿══
 ║
 ╠🌸 *${prefix}antilink [1/0]*
-╠🌸 *${prefix}brainly [pergunta]*
+╠🌸 *${prefix}brainly [pergunta}*
 ╠🌸 *${prefix}antiracismo [on/off]*
-╠🌸 *${prefix}setnomebot*
-╠🌸 *${prefix}losernsfw*
 ║
 ╠══◇〘 INTERATIVOS 〙◇══
 ║
