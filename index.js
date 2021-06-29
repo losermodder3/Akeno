@@ -688,7 +688,7 @@ if (text.includes("placa"))
 	
 			if (messagesC.includes("nyampasu")){
 			client.updatePresence(from, Presence.composing)
-			tujuh = fs.readFileSync('./assets/Nyanpasu(Rynti M Remix).mp3');
+			tujuh = fs.readFileSync('./assets/Nyanpasu.mp3');
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 	
