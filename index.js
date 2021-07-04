@@ -3738,7 +3738,7 @@ break
 				case 'limpar':
 					if (!isOwner) return reply('Quem é Você?, Voce não é meu dono 😂')
 					anu = await client.chats.all()
-					client.setMaxListeners(30)
+					client.setMaxListeners(25)
 					for (let _ of anu) {
 						client.deleteChat(_.jid)
 					}
@@ -3977,6 +3977,18 @@ break
 						reply('1 para ativar, 0 para desativar')
 					}
                     break
+                    case 'bugreport':
+                   const bug = body.slice(10)
+                   if (args.length > 300) return client.sendMessage(from, 'Máximo 300 caracteres', msgType.text, {quoted: mek})
+                   var nomor = mek.participant
+                   teks1 = `[REPORT]\nDe: wa.me/${sender.split("@s.whatsapp.net")[0]}\nErro ou bug: ${bug}`
+                   var options = {
+                   text: teks1, 
+                   contextInfo: {mentionedJid: [sender]}, 
+                   }
+                   client.sendMessage('5521973747709@s.whatsapp.net', options, text, {quoted: mek})
+                   reply("Mensagem enviada ao meu dono;  não floodem o chat pfvr")
+                  break
 				case 'clonar':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
@@ -4172,6 +4184,73 @@ teks1 = txt.split("|")[0];
 teks2 = txt.split("|")[1];
 kratoss = await getBuffer(`https://pencarikode.xyz/api/textpro/space-3d?text=${teks1}&text2=${teks2}&apikey=pais`)
 client.sendMessage(from, kratoss, image, {quoted: mek})
+break
+case 'hentai': //@Decim 愛
+reply('Enviando....')
+buffer = await getBuffer(`https://hadi-api.herokuapp.com/api/neko2`)
+client.sendMessage(from, buffer, image, {quoted: mek})
+break
+case 'waifu': //@Decim 
+buffer = await getBuffer(`https://hadi-api.herokuapp.com/api/neko2`)
+client.sendMessage(from, buffer, image, {quoted: mek})
+break
+case 'pornhub': //@Decim 愛
+txt = body.slice(8)
+teks1 = txt.split("|")[0];
+teks2 = txt.split("|")[1];
+buffer = await getBuffer(`https://pencarikode.xyz/api/textpro/phub?text=${teks1}&text2=${teks2}&apikey=pais`)
+client.sendMessage(from, buffer, image, {quoted: mek})
+break 
+case 'space': //@Decim 愛
+teks1 = txt.split("|")[0];
+teks2 = txt.split("|")[1];
+kratoss = await getBuffer(`https://pencarikode.xyz/api/textpro/space-3d?text=${teks1}&text2=${teks2}&apikey=pais`)
+client.sendMessage(from, kratoss, image, {quoted: mek})
+break				
+case 'grafitir': //@Decim 愛
+teks = body.slice(9)
+kratosdominar = await getBuffer(`https://hadi-api.herokuapp.com/api/photoxy/grafiti-text-cover?teks=${teks}`)
+client.sendMessage(from, kratosdominar, image, {quoted: mek, capition: 'Decim domina'})
+break
+case 'jokerlogo': // @Decim 愛
+kratoss = body.slice(10)
+kratosdomina = await getBuffer(`https://pencarikode.xyz/api/textpro/joker?text=${kratoss}&apikey=pais`)
+client.sendMessage(from, kratosdomina, image,  {quoted: mek})
+break
+case 'narutobanner': //@Decim 愛
+teks = body.slice(13)
+kratu = await getBuffer(`https://hadi-api.herokuapp.com/api/photoxy/manga-naruto?teks=${teks}`)
+client.sendMessage(from, kratu, image, {quoted: mek})
+break
+case  'rename':
+
+		    		if (!isQuotedSticker) return reply('Apenas figuriha senpai')
+		            encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
+				    media = await client.downloadAndSaveMediaMessage(encmedia)
+		            anu = args.join(' ').split('|')
+		            satu = anu[0] !== '' ? anu[0] : `YT`
+		            dua = typeof anu[1] !== 'undefined' ? anu[1] : `Kratos`
+		            require('./lib/fetcher.js').createExif(satu, dua)
+					require('./lib/fetcher.js').modStick(media, client, mek, from)
+					break
+               case 'plaquinha':
+					if (args.length < 1) return reply(mess.blank)
+					teks = body.slice(10)
+					if (teks.length > 10) return reply('O texto é longo, até 8 caracteres')
+					reply('*Estou fazendo... *')
+					buffer = await getBuffer(`https://rsymenti.sirv.com/images%20(10).jpeg?text.0.text=${teks}&text.0.position.gravity=south&text.0.position.x=4%25&text.0.position.y=-32%25&text.0.align=left&text.0.size=34&text.0.color=000000&text.0.opacity=78&text.0.background.opacity=78&text.0.outline.blur=72&text.0.outline.opacity=74`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Tomar senpai'})
+					break
+case 'togif': // @Decim
+if ((isMedia && !mek.message.videoMessage || isQuotedSticker) && args.length == 0) {
+const encmediaaa = isQuotedSticker ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
+const mediaaa = await client.downloadAndSaveMediaMessage(encmediaaa)
+reply(mess.wait)
+a = await webp2gifFile(mediaaa)
+mp4 = await getBuffer(a.result)
+client.sendMessage(from, mp4, MessageType.video, {mimetype: 'video/gif', filename: `stick.gif`, quoted: mek, caption: '✅'})
+fs.unlinkSync(mediaaa)
+}
 break				
 case 'grafitir': //@loserzinn 愛
 teks = body.slice(9)
