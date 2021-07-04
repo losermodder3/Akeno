@@ -3738,7 +3738,7 @@ break
 				case 'limpar':
 					if (!isOwner) return reply('Quem é Você?, Voce não é meu dono 😂')
 					anu = await client.chats.all()
-					client.setMaxListeners(25)
+					client.setMaxListeners(30)
 					for (let _ of anu) {
 						client.deleteChat(_.jid)
 					}
@@ -3977,18 +3977,6 @@ break
 						reply('1 para ativar, 0 para desativar')
 					}
                     break
-                    case 'bugreport':
-                   const bug = body.slice(10)
-                   if (args.length > 300) return client.sendMessage(from, 'Máximo 300 caracteres', msgType.text, {quoted: mek})
-                   var nomor = mek.participant
-                   teks1 = `[REPORT]\nDe: wa.me/${sender.split("@s.whatsapp.net")[0]}\nErro ou bug: ${bug}`
-                   var options = {
-                   text: teks1, 
-                   contextInfo: {mentionedJid: [sender]}, 
-                   }
-                   client.sendMessage('5521973747709@s.whatsapp.net', options, text, {quoted: mek})
-                   reply("Mensagem enviada ao meu dono;  não floodem o chat pfvr")
-                  break
 				case 'clonar':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
