@@ -13,12 +13,16 @@ const help = (prefix) => {
 ║
 ╠══♤〘 MENU 〙♤══
 ║
-╠🌸*${prefix}figu*
+╠🌸 *${prefix}figu*
 ╠🌸 *${prefix}toimg(faz figu em foto)
 ╠🌸 *${prefix}tts*(idioma e seu texto)
 ║
 ╠══☆〘 NOVOS〙☆══
-║
+╠🌸 *${prefix}ownergroup(dono do grupo num)
+╠🌸 *${prefix}nekoanime*
+╠🌸 *${prefix}
+╠🌸 *${prefix}info*
+╠🌸 *${prefix}semoji*
 ╠🌸 *${prefix}Togif(figu animada)*
 ╠🌸 *${prefix}Rename(colocar nome na figu)*
 ╠🌸 *${prefix}attp1(seu texto)*
