@@ -3840,6 +3840,73 @@ break
 					}
 					mentions(teks, groupAdmins, true)
 					break
+				case 'hentai': //loserrrrr 愛
+reply('estou mandando..')
+buffer = await getBuffer(`https://hadi-api.herokuapp.com/api/neko2`)
+client.sendMessage(from, buffer, image, {quoted: mek})
+break
+case 'waifu': //loserrrrr 
+buffer = await getBuffer(`https://hadi-api.herokuapp.com/api/neko2`)
+client.sendMessage(from, buffer, image, {quoted: mek})
+break
+case 'pornhub': //loserrrrr 愛
+txt = body.slice(8)
+teks1 = txt.split("|")[0];
+teks2 = txt.split("|")[1];
+buffer = await getBuffer(`https://pencarikode.xyz/api/textpro/phub?text=${teks1}&text2=${teks2}&apikey=pais`)
+client.sendMessage(from, buffer, image, {quoted: mek})
+break 
+case 'space':
+teks1 = txt.split("|")[0];
+teks2 = txt.split("|")[1];
+kratoss = await getBuffer(`https://pencarikode.xyz/api/textpro/space-3d?text=${teks1}&text2=${teks2}&apikey=pais`)
+client.sendMessage(from, kratoss, image, {quoted: mek})
+break				
+case 'grafitir': 
+teks = body.slice(9)
+kratosdominar = await getBuffer(`https://hadi-api.herokuapp.com/api/photoxy/grafiti-text-cover?teks=${teks}`)
+client.sendMessage(from, kratosdominar, image, {quoted: mek, capition: 'Decim domina'})
+break
+case 'jokerlogo': // loserrrrr 愛
+kratoss = body.slice(10)
+kratosdomina = await getBuffer(`https://pencarikode.xyz/api/textpro/joker?text=${kratoss}&apikey=pais`)
+client.sendMessage(from, kratosdomina, image,  {quoted: mek})
+break
+case 'narutobanner': //loserrrrr 愛
+teks = body.slice(13)
+kratu = await getBuffer(`https://hadi-api.herokuapp.com/api/photoxy/manga-naruto?teks=${teks}`)
+client.sendMessage(from, kratu, image, {quoted: mek})
+break
+case  'rename':
+
+		    		if (!isQuotedSticker) return reply('Apenas figuriha senpai')
+		            encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
+				    media = await client.downloadAndSaveMediaMessage(encmedia)
+		            anu = args.join(' ').split('|')
+		            satu = anu[0] !== '' ? anu[0] : `YT`
+		            dua = typeof anu[1] !== 'undefined' ? anu[1] : `Kratos`
+		            require('./lib/fetcher.js').createExif(satu, dua)
+					require('./lib/fetcher.js').modStick(media, client, mek, from)
+					break
+               case 'plaquinha':
+					if (args.length < 1) return reply(mess.blank)
+					teks = body.slice(10)
+					if (teks.length > 10) return reply('O texto é longo, até 8 caracteres')
+					reply('* ora ora.. *')
+					buffer = await getBuffer(`https://rsymenti.sirv.com/images%20(10).jpeg?text.0.text=${teks}&text.0.position.gravity=south&text.0.position.x=4%25&text.0.position.y=-32%25&text.0.align=left&text.0.size=34&text.0.color=000000&text.0.opacity=78&text.0.background.opacity=78&text.0.outline.blur=72&text.0.outline.opacity=74`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Toma senpai'})
+					break
+case 'togif': // loserrrrr
+if ((isMedia && !mek.message.videoMessage || isQuotedSticker) && args.length == 0) {
+const encmediaaa = isQuotedSticker ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
+const mediaaa = await client.downloadAndSaveMediaMessage(encmediaaa)
+reply(mess.wait)
+a = await webp2gifFile(mediaaa)
+mp4 = await getBuffer(a.result)
+client.sendMessage(from, mp4, MessageType.video, {mimetype: 'video/gif', filename: `stick.gif`, quoted: mek, caption: '✅'})
+fs.unlinkSync(mediaaa)
+}
+break
                                 case 'linkgp':
                                         if (!isGroup) return reply(mess.only.group)
                                         if (!isGroupAdmins) return reply(mess.only.admin)
@@ -3909,7 +3976,19 @@ break
 					} else {
 						reply('1 para ativar, 0 para desativar')
 					}
-                                      break
+                    break
+                    case 'bugreport':
+                   const bug = body.slice(10)
+                   if (args.length > 300) return client.sendMessage(from, 'Máximo 300 caracteres', msgType.text, {quoted: mek})
+                   var nomor = mek.participant
+                   teks1 = `[REPORT]\nDe: wa.me/${sender.split("@s.whatsapp.net")[0]}\nErro ou bug: ${bug}`
+                   var options = {
+                   text: teks1, 
+                   contextInfo: {mentionedJid: [sender]}, 
+                   }
+                   client.sendMessage('5521973747709@s.whatsapp.net', options, text, {quoted: mek})
+                   reply("Mensagem enviada ao meu dono;  não floodem o chat pfvr")
+                  break
 				case 'clonar':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
@@ -4137,21 +4216,38 @@ case 'waifu': //@loserzinn 
 buffer = await getBuffer(`https://hadi-api.herokuapp.com/api/neko2`)
 client.sendMessage(from, buffer, image, {quoted: mek})
 break
-
-//COMANDOS PLAY BY @loserzinn 
-case 'play':   
-//@loserzinn 
-				reply(mess.wait)
-				const play = body.slice(5)
-				anu = await fetchJson(`https://api.zeks.xyz/api/ytplaymp3?q=${play}&apikey=apivinz`)
-				if (anu.error) return reply(anu.error)
-				infomp3 = ` \n\n:\n ${anu.result.title}\n:${anu.result.source}\n: ${anu.result.size}`				
-				buffer = await getBuffer(anu.result.thumbnail)
-			//	client.sendMessage(from, buffer, image, {quoted: mek, caption: infomp3})
-				lagu = await getBuffer(anu.result.url_audio)
-client.sendMessage(from, buffer, image, {quoted: download1, caption: infomp3})
-	client.sendMessage(from, lagu, audio, {mimetype: 'audio/mp4', filename: `${anu.result.title}.mp3`, quoted: download})
-				break
+                    case 'semoji':
+					if (args.length < 1) return reply('emojinya mana um?')
+					ranp = getRandom('.png')
+					rano = getRandom('.webp')
+					teks = body.slice(8).trim()
+					anu = await fetchJson(`https://mhankbarbars.herokuapp.com/api/emoji2png?emoji=${teks}`, {method: 'get'})
+					if (anu.error) return reply(anu.error)
+					exec(`wget ${anu.result} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
+						fs.unlinkSync(ranp)
+						if (err) return reply(mess.error.stick)
+						buffer = fs.readFileSync(rano)
+						client.sendMessage(from, buffer, sticker)
+						fs.unlinkSync(rano)
+					})
+					break
+				case 'info':
+					me = client.user
+					uptime = process.uptime()
+					teks = `*Nama bot* : ${me.name}\n*Nomor Bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total Block Contact* : ${blocked.length}\n*The bot is active on* : ${kyun(uptime)}\n*Total Chat* : ${totalchat.length}`
+					buffer = await getBuffer(me.imgUrl)
+					client.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
+					break
+				case 'nekonime':
+           data = await fetchJson('https://waifu.pics/api/sfw/neko')
+           hasil = await getBuffer(data.url)
+           client.sendMessage(from, hasil, image, {quoted: mek})
+           break
+           case 'nekonime':
+           data = await fetchJson('https://waifu.pics/api/sfw/neko')
+           hasil = await getBuffer(data.url)
+           client.sendMessage(from, hasil, image, {quoted: mek})
+           break
 
 //COMANDOS DE PESQUISAS
  case 'pucep':
