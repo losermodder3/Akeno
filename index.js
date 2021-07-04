@@ -4216,39 +4216,11 @@ case 'waifu': //@loserzinn 
 buffer = await getBuffer(`https://hadi-api.herokuapp.com/api/neko2`)
 client.sendMessage(from, buffer, image, {quoted: mek})
 break
-                    case 'semoji':
-					if (args.length < 1) return reply('emojinya mana um?')
-					ranp = getRandom('.png')
-					rano = getRandom('.webp')
-					teks = body.slice(8).trim()
-					anu = await fetchJson(`https://mhankbarbars.herokuapp.com/api/emoji2png?emoji=${teks}`, {method: 'get'})
-					if (anu.error) return reply(anu.error)
-					exec(`wget ${anu.result} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
-						fs.unlinkSync(ranp)
-						if (err) return reply(mess.error.stick)
-						buffer = fs.readFileSync(rano)
-						client.sendMessage(from, buffer, sticker)
-						fs.unlinkSync(rano)
-					})
-					break
-				case 'info':
-					me = client.user
-					uptime = process.uptime()
-					teks = `*Nama bot* : ${me.name}\n*Nomor Bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total Block Contact* : ${blocked.length}\n*The bot is active on* : ${kyun(uptime)}\n*Total Chat* : ${totalchat.length}`
-					buffer = await getBuffer(me.imgUrl)
-					client.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
-					break
 				case 'nekonime':
            data = await fetchJson('https://waifu.pics/api/sfw/neko')
            hasil = await getBuffer(data.url)
            client.sendMessage(from, hasil, image, {quoted: mek})
            break
-           case 'nekonime':
-           data = await fetchJson('https://waifu.pics/api/sfw/neko')
-           hasil = await getBuffer(data.url)
-           client.sendMessage(from, hasil, image, {quoted: mek})
-           break
-
 //COMANDOS DE PESQUISAS
  case 'pucep':
  //@loserzinn 
