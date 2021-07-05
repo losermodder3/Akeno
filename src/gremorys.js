@@ -1,5 +1,5 @@
-const gremorys vip = (prefix) =>{ 
-	return `
+const daftarvip = (prefix) =>{ 
+	return`
 	
 *Ola se você usou esse comando é por que deseja comprar o vip aqui esta a lista*🍭❤
 ──────────────────(♤Rias♡)────────────────────────────────
@@ -8,6 +8,6 @@ const gremorys vip = (prefix) =>{
  *15 dinheiros você tera todas as permissões e podera por a Rias em seu grupo🌸
 ────────────────(♤Rias♡)──────────────────────────────────
  * caso tenha duvidas de .owner*
-*GRUPO DO LOSER♠️🚩 :*https://chat.whatsapp.com/IUW4JzfK71eKgkRIUDPfsf    `
+*GRUPO DO LOSER♠️🚩 :*https://chat.whatsapp.com/IUW4JzfK71eKgkRIUDPfsf`
 }
-exports.gremorys = gremorys
+exports.daftarvip = daftarvip
