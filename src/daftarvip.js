@@ -1,5 +1,5 @@
-const daftarvip = (prefix) =>{ 
-	return`
+const daftarvip = (prefix) => { 
+	return `
 	
 *Ola se você usou esse comando é por que deseja comprar o vip aqui esta a lista*🍭❤
 ──────────────────(♤Rias♡)────────────────────────────────
