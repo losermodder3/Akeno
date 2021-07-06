@@ -1,6 +1,5 @@
 const daftarvip = (prefix) => { 
 	return `
-	
 *Ola se você usou esse comando é por que deseja comprar o vip aqui esta a lista*🍭❤
 ──────────────────(♤Rias♡)────────────────────────────────
  *10 dinheiros ou diamantes no fogareu ( 300) = acesso aos comandos vip e premium🍁🌸
