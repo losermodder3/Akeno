@@ -1,12 +1,20 @@
 const daftarvip = (prefix) => { 
 	return `
-*Ola se você usou esse comando é por que deseja comprar o vip aqui esta a lista*🍭❤
-──────────────────(♤Rias♡)────────────────────────────────
- *10 dinheiros ou diamantes no fogareu ( 300) = acesso aos comandos vip e premium🍁🌸
-────────────────(♤Rias♡)─────────────────────────────────
- *15 dinheiros você tera todas as permissões e podera por a Rias em seu grupo🌸
-────────────────(♤Rias♡)──────────────────────────────────
- * caso tenha duvidas de .owner*
-*GRUPO DO LOSER♠️🚩 :*https://chat.whatsapp.com/IUW4JzfK71eKgkRIUDPfsf`
+	
+*PREÇO DE LISTA VIP :*
+
+-Rp. 10 > Acessar recursos ViP
+-Rp. 20 > Recursos VIP + Insira o bot no seu grupo!
+
+*SE QUER REGISTAR VIP :*
+
+*Proprietário do bate-papo BOT :*
+
+_wa.me/554792091566 ou digite *${prefix}owner*_
+
+*NOTA*
+
+*GRUPO DO loser :*
+https://chat.whatsapp.com/E9zPuWj6KLQ3HhBaZPB411 `
 }
 exports.daftarvip = daftarvip
