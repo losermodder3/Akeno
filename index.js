@@ -4220,7 +4220,7 @@ client.sendMessage(from, buffer, image, {quoted: download1, caption: infomp3})
 	client.sendMessage(from, lagu, audio, {mimetype: 'audio/mp4', filename: `${anu.result.title}.mp3`, quoted: download})
 				break
 
-//COMANDOS DE PESQUISAS
+//COMANDOS DE 
  case 'pucep':
  //@loserzinn 
  if (args.length < 1) return reply('Cad� O Cep')
