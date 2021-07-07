@@ -51,7 +51,7 @@ const { limit } = require('./database/menu/limit*/
 const apivhtear = 'apivhtear';
 const apibarbar = 'apibarbar';
 const tobzkey = 'apitobz';
-const BotName = 'Causs bot'; 
+const BotName = 'rias'; 
 const instagram = 'http://www.instagram.com/'; 
 const aktif = '08:00 - 22:00';
 const vcard = 'BEGIN:VCARD\n'
@@ -729,7 +729,7 @@ if (text.includes("placa"))
 	
 				if (messagesC.includes("mandememe")){
 			client.updatePresence(from, Presence.composing)
-			data = fs.readFileSync('./src/rias.js');
+			data = fs.readFileSync('./src/lolizinha.js');
                  jsonData = JSON.parse(data);
                  randIndex = Math.floor(Math.random() * jsonData.length);
                  randKey = jsonData[randIndex];
@@ -946,6 +946,14 @@ break
 					teks += `Total : ${sayrandom.length}`
 					client.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": sayrandom}})
 					break
+					case 'rias':
+				 data = fs.readFileSync('./src/rias.js');
+                 jsonData = JSON.parse(data);
+                 randIndex = Math.floor(Math.random() * jsonData.length);
+                 randKey = jsonData[randIndex];
+                hasil = await getBuffer(randKey.result)
+                sendImage(hasil, mek, '*GELAP BOS :V*')
+				break
 				case 'ssweb':
 				
 					if (args.length < 1) return reply('Cadê o url tio')
@@ -2123,8 +2131,8 @@ case 'pinterest':
 					client.sendMessage(from, pok, image, { quoted: mek, caption: `*PINTEREST*\n\*Resultado da pesquisa* : *${tels}*`})
                     await limitAdd(sender)
 					break
-                case 'rias':
-				 data = fs.readFileSync('./src/rias.js');
+                case 'lolizinha':
+				 data = fs.readFileSync('./src/lolizinha.js');
                  jsonData = JSON.parse(data);
                  randIndex = Math.floor(Math.random() * jsonData.length);
                  randKey = jsonData[randIndex];
