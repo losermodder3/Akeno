@@ -12,7 +12,7 @@
 ## Clone esse projeto
 
 ```bash
-> git clone https://github.com/losermodder2/Decim
+> https://github.com/losermodder2/Rias
 ```
 
 ## fazer a rias funfar use os comando:
@@ -23,8 +23,8 @@
 > pkg install ffmpeg
 > pkg install wget
 > pkg install nodejs
-> git clone https://github.com/losermodder2/Decim
-> cd Decim
+> git clone https://github.com/losermodder2/Rias
+> cd Rias
 > bash install.sh
 ```
 
@@ -42,5 +42,5 @@
 
 ## Agradecimentos
 
-@slazinn
+Eu
 
