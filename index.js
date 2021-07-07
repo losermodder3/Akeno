@@ -230,7 +230,7 @@ async function starts() {
 			} else if (anu.action == 'remove') {
 				num = anu.participants[0]
 				try {
-					ppimg = await client.getProfilePicture
+					ppimg = await client.getProfilePicture ${sender.split("@")[0]}
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
