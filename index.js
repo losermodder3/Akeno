@@ -230,7 +230,7 @@ async function starts() {
 			} else if (anu.action == 'remove') {
 				num = anu.participants[0]
 				try {
-					ppimg = await client.getProfilePicture(`$num.split('@')[0]}@c.us`)
+					ppimg = await client.getProfilePicture(`${num.split('@')[0]}@c.us`)
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
@@ -2471,13 +2471,6 @@ break
 					const ti =['4','9','17','28','34','48','59','62','74','83','97','100','29','94','75','82','41','39']
 					const kl = ti[Math.floor(Math.random() * ti.length)]
 					client.sendMessage(from, 'Como você é gay: *'+rate+'*\n\nSua porcentagem gay : '+ kl+'%', text, { quoted: mek })
-					break
-		        case 'chifrudo':		
-	            	if (args.length < 1) return reply('marque seus amigos!')
-					rate = body.slice(1)
-					const ti =['4','9','17','28','34','48','59','62','74','83','97','100','29','94','75','82','41','39']
-					const kl = ti[Math.floor(Math.random() * ti.length)]
-					client.sendMessage(from, 'Como você é chifrudo: *'+rate+'*\n\nSua porcentagem de chifrudo : '+ kl+'%', text, { quoted: mek })
 					break
                   case 'timer':
 				if (args[1]=="segundo") {var timer = args[0]+"000"
