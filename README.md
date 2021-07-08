@@ -7,11 +7,13 @@
 </p>
 
 Irei te ajudar me instalar🍁💜
-###################
+🍁🍁🍁🍁🍁🍁🍁🍁
+````bash🌸
 Siga os passos abaixo:
-###################
+🍁🍁🍁🍁🍁🍁🍁🍁
 💜akeno a seu dispor💜
-####################
+🍁🍁🍁🍁🍁🍁🍁🍁
+`````bash🌸
 > termux-setup-storage
 > pkg install git
 > pkg install ffmpeg
@@ -20,12 +22,12 @@ Siga os passos abaixo:
 > git clone https://github.com/CoelhoTv76/Decim
 > cd Decim
 > bash install.sh
-```
+```bash
 ##############
 🍁 Para rodar🍁
-```
+```bash
 > npm start
-```
+```bash
 Para o bot não cair use
 
 > npm i -g pm2 (para instalar)
