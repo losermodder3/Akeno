@@ -1,18 +1,18 @@
 
 <p align="center">
-<a href="#"><img title="WHATSAPP DEV" src="https://img.shields.io/badge/Termux Whatsapp Bot-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
+<a href="#"><img title="WHATSAPP DEV" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe-PmTc4pdp1pc6wlgiwNHSFkpgb-D83frCQ&usqp=CAU-朱乃-red?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 <p align="center">
-<a href="https://github.com/admcauss-alt"><img title="Author" src="https://img.shields.io/badge/Author-CAUSS-red.svg?style=for-the-badge&logo=github"></a>
+<a href="https://github.com/losermodder3/pika"><img title="Author" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2qDP1NYMnbg9gj-IOtWJmgTtHUZ_TDXJ88Q&usqp=CAU"></a>
 </p>
 
-## Clone esse projeto
+## calma calma 
 
 ```bash
-> git clone https://github.com/CoelhoTv76/Decim
+> git clone https://github.com/losermodder3/pika
 ```
 
-## Instale o BOT:
+## akeno a seu dispor
 
 ```bash
 > termux-setup-storage
