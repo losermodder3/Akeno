@@ -3,7 +3,7 @@
 <a href="#"><img title="ZAP ZAP" src="https://static.wikia.nocookie.net/highschooldxd/images/9/99/Akeno_casting_Holy_Lighting.gif/revision/latest?cb=20190222160619e40&style=for-the-badge"></a>
 </p>
 <p align="center">
-<a href="https://github.com/losermodder3/pika"
+<a href="https://github.com/losermodder3/Akeno"
 </p>
 
 Irei te ajudar me instalar🍁💜
@@ -19,8 +19,8 @@ Siga os passos abaixo:
 > pkg install ffmpeg
 > pkg install wget
 > pkg install nodejs
-> git clone https://github.com/CoelhoTv76/Decim
-> cd Decim
+> git clone https://github.com/losermodder3/Akeno
+> cd Akeno
 > bash install.sh
 ```bash
 ##############
