@@ -19,7 +19,7 @@ const help = (prefix) => {
 ║
 ╠🍁 *${prefix}nekoanime*
 ╠🍁 *${prefix}hentai1*
-╠🍁 *${prefix}
+╠🍁 *${prefix}hentailista*
 ╠🍁 *${prefix}semoji*
 ╠🍁 *${prefix}Togif(figu animada)*
 ╠🍁 *${prefix}Rename(colocar nome na figu)*
