@@ -1,6 +1,6 @@
 
 <p align="center">
-<a href="#"><img title="WHATSAPP DEV" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe-PmTc4pdp1pc6wlgiwNHSFkpgb-D83frCQ&usqp=CAU-朱乃-red?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
+<a href="#"><img title="WHATSAPP DEV" src="https://static.wikia.nocookie.net/highschooldxd/images/9/99/Akeno_casting_Holy_Lighting.gif/revision/latest?cb=20190222160619e40&style=for-the-badge"></a>
 </p>
 <p align="center">
 <a href="https://github.com/losermodder3/pika"><img title="Author" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2qDP1NYMnbg9gj-IOtWJmgTtHUZ_TDXJ88Q&usqp=CAU"></a>
