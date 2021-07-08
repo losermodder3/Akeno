@@ -1,6 +1,6 @@
 
 <p align="center">
-<a href="#"><img title="WHATSAPP DEV" src="https://static.wikia.nocookie.net/highschooldxd/images/9/99/Akeno_casting_Holy_Lighting.gif/revision/latest?cb=20190222160619e40&style=for-the-badge"></a>
+<a href="#"><img title="ZAP ZAP" src="https://static.wikia.nocookie.net/highschooldxd/images/9/99/Akeno_casting_Holy_Lighting.gif/revision/latest?cb=20190222160619e40&style=for-the-badge"></a>
 </p>
 <p align="center">
 <a href="https://github.com/losermodder3/pika"
