@@ -7,7 +7,7 @@ const {
 } = require('@adiwajshing/baileys')
 const { color, bgcolor } = require('./lib/color')
 const { help } = require('./src/help')
-const {help1} = require('./src/help1')
+const {hentailista} = require('./src/hentailista')
 const { modapk } = require('./src/modapk')
 const { pack } = require('./src/pack')
 const { outros } = require('./src/outros')
@@ -751,9 +751,9 @@ if (text.includes("placa"))
 				case 'menu':
 					client.sendMessage(from, help(prefix), text)
 					break
-				case 'help1':
+				case 'hentailista':
 				case 'menu1':
-					client.sendMessage(from, help1(prefix), text)
+					client.sendMessage(from, hentailista(prefix), text)
 					break
 					case 'kiss':
 				    try {    
@@ -3073,7 +3073,7 @@ break
 					break
 			    case 'owner':
                     client.sendMessage(from, {displayname: "Jeff", vcard: vcard}, MessageType.contact, { quoted: mek})
-                    client.sendMessage(from, 'Ctt do meu dono ai, pfv n flode o chat',MessageType.text, { quoted: mek} )
+                    client.sendMessage(from, 'numero do meu amor, flooda o chat não🍭',MessageType.text, { quoted: mek} )
                     break
                 case 'fitnah':	
 				case 'fake':          
@@ -3449,7 +3449,7 @@ break
 				case 'bot':
 			     	memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://i.imgur.com/dPUVFF6.png`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*_Comandos basicos para bot:_*\n\n*pkg upgrade && pkg update*\n*pkg install git*\n*git clone (link da git)*\n*cd (repositório)*\n*bash install.sh*\n*npm start*\n\n*loser NO CONTROLE*'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*_Comandos basicos para bot:_*\n\n*pkg upgrade && pkg update*\n*pkg install git*\n*git clone (link da git)*\n*cd (repositório)*\n*bash install.sh*\n*npm start*\n\n*loser *'})
 					break
 				case 'belle3':
 					memein = await kagApi.memeindo()
@@ -3609,8 +3609,8 @@ break
                     break
 				case 'dono':
 					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://static.wikia.nocookie.net/highschooldxd/images/9/99/Akeno_casting_Holy_Lighting.gif/revision/latest?cb=20190222160619`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*CRIADOR:* LOSER\n*YOUTUBE:*https://youtube.com/channel/UCOjRuKF7S9_y188FQ_F5CbQ\n*WPP:* wa.me/+55219737477\n*INSTA:* @loserzinn\n\n\nEspero que goste da Akeno️'})
+					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3pgry-c1E7HIn79xtcbo1FCV0KoxxER8unw&usqp=CAU`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*CRIADOR:* LOSER\n*YOUTUBE:*https://youtube.com/channel/UCOjRuKF7S9_y188FQ_F5CbQ\n*WPP:* wa.me/+5521973747709\n*INSTA:* @loserzinn\n\n\nEspero que goste da Akeno️'})
 					break
 				case 'setprefix':
 					if (args.length < 1) return
