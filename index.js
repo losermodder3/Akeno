@@ -275,7 +275,7 @@ async function starts() {
 			const isCmd = body.startsWith(prefix)
 
 			mess = {
-					wait: '❬❗❭ Espere',
+					wait: '❬🍁❭so um momentinho',
 					success: '️❬ ✔ ❭ Sucesso 🖤',
 					levelon: '❬ ✔ ❭ *leveling* *ativado*',
 					leveloff: ' ❬ X ❭  *leveling* *desativado*',
@@ -676,14 +676,14 @@ if (text.includes("placa"))
 			reply("bora juntos?")
 	}
 	
-		if (messagesC.includes("cadebot")){
+		if (messagesC.includes("akeno")){
 			client.updatePresence(from, Presence.composing)
-			reply("olha eu aqui carai")
+			reply("estou aqui")
 	}
 	
 		if (messagesC.includes("bot")){
 			client.updatePresence(from, Presence.composing)
-			reply("oi")
+			reply("oi pessoal")
 	}
 	
 			if (messagesC.includes("bah")){
@@ -692,9 +692,9 @@ if (text.includes("placa"))
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 	
-				if (messagesC.includes("loser")){
+				if (messagesC.includes("nyampasu")){
 			client.updatePresence(from, Presence.composing)
-			tujuh = fs.readFileSync('./assets/loserf.mp3');
+			tujuh = fs.readFileSync('./assets/nyampasu.mp3');
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 	
@@ -715,9 +715,9 @@ if (text.includes("placa"))
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 	
-					if (messagesC.includes("grita")){
+					if (messagesC.includes("juggenautdrive")){
 			client.updatePresence(from, Presence.composing)
-			tujuh = fs.readFileSync('./assets/a.mp3');
+			tujuh = fs.readFileSync('./assets/juggenautdrive.mp4');
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 	
@@ -752,7 +752,7 @@ if (text.includes("placa"))
 					client.sendMessage(from, help(prefix), text)
 					break
 				case 'hentailista':
-				case 'menu1':
+				case 'hentailista':
 					client.sendMessage(from, hentailista(prefix), text)
 					break
 					case 'kiss':
@@ -1783,8 +1783,22 @@ break
                 hasil = await getBuffer(randKey.result)
                 sendImage(hasil, mek, '*GELAP BOS :V*')
 				break
-                case 'hentai1':
-				 data = fs.readFileSync('./src/hentai1.js');
+				case 'pack':
+                    if (!isPremium) return reply(mess.only.premium)
+                    client.sendMessage(from, pack18(prefix) , text, {quoted: mek, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg","caption": "By Skiller", 'jpegThumbnail': fs.readFileSync('kk/sticker/botlogo.webp')}}}})					
+                break
+                case 'antispam':
+
+					if (!isGroup) return reply(mess.only.group)
+
+					if (!isGroupAdmins) return reply(mess.only.admin)
+
+					if (args.length < 1) return reply('Hmmmm')
+
+					if ((args[0]) === 'on') {
+                  break
+                case 'akeno':
+				 data = fs.readFileSync('./src/akeno.js');
                  jsonData = JSON.parse(data);
                  randIndex = Math.floor(Math.random() * jsonData.length);
                  randKey = jsonData[randIndex];
@@ -3456,25 +3470,20 @@ break
 					buffer = await getBuffer(`https://1.bp.blogspot.com/-3K_b14RzHTA/XwTW7SQTPRI/AAAAAAAAPtY/UOaKURECbzwXfvASa3g6Pz0D_Ha73Dw4wCLcBGAsYHQ/s1600/boabronha_10.jpg`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'olha p isso mano, pqp '})
 					break
-				case 'akeno':
+				case 'wallpaperpc':
 					meme = await kagApi.memes()
-					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnFAocqaur5ZX1DPN6ZGP8PJy2cNppas_gYA&usqp=CAU`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '.......'})
+					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8ckpPo7vDVH_Z01TO2bckghIsdKQFfwM7oQ&usqp=CAU`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'seu pc vai ficar lindo'})
 					break
-				case 'loli1':
+				case 'wallpapercel':
 					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://i.imgur.com/iphQUGi.jpg`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Lolicon'})
-					break
-				case 'hentai':
-					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://i.imgur.com/8U9GwX4.jpg`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Cara sente tesão em desenho'})
+					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiK6ksl-ztPhWE3LqUOk4NKeNMf_Pxm_bA0A&usqp=CAU`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: esta ai senpai})
 					break
 				case 'bomdia':
 					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://i.imgur.com/7VL9cFf.jpg`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Bom dia🍭'})
+					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDD73z_rmOTVT42QlpzDQGxdi_WLFEmWcFzg&usqp=CAU`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'ora ora bom dia senpai🍭❤'})
 					break
 				case 'boatarde':
 					memein = await kagApi.memeindo()
@@ -3494,25 +3503,20 @@ break
                 hasil = await getBuffer(randKey.result)
                 sendImage(hasil, mek, '*Belle :V*')
 				break
-				case 'belle1':
+				case 'xerek1':
 					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ7ot6RZPnXSJFFKVjPoeXHjTYyi6uk5W_mA&usqp=CAU`)
+					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsYlR64ekcy-2RK_oBArzy_NbdwaC2y1FsjA&usqp=CAU`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: '👀️'})
 					break
-				case 'lofi':
+				case 'xerek2':
 					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL9hZBPRo16fIhsIus3t1je2oAU23pQqBpfw&usqp=CAU`)
+					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnWWZl0lqe1KWrChTng5MyBBRDnCbPZihpPA&usqp=CAU`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: '️💆'})
 					break
 				case 'malkova':
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtbo5EcVSGj-IvEVznHIgMZ9vjFptZfvprtg&usqp=CAU`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: '️💆'})
-					break
-				case 'canal':
-					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://imgur.com/gallery/xuTCBPO`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '️*canal do loser:*\n\n https://youtube.com/channel/UCpB3qh2Sp3K23s9a2Q-Gf-g'})
 					break
 				case 'nsfwloli1':
 					memein = await kagApi.memeindo()
@@ -3872,7 +3876,7 @@ break
                                         }
                                         break
 				case 'toimg':
-					if (!isQuotedSticker) return reply('{ ❗ } *Marque a figurinha*')
+					if (!isQuotedSticker) return reply('{ ❗ } *Marca a figurinha*')
 					reply(mess.wait)
 					encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 					media = await client.downloadAndSaveMediaMessage(encmedia)
@@ -4021,31 +4025,9 @@ break
 					}
 					reply('Excluido todo o bate-papo com sucesso :)')
 					break
-					 		break
-                case 'ytplay':
-                if (args.length < 1) return reply(`qual título mano?\nexemplo : ${prefix + command} Teto Paypal`)
-                reply('Procurando sua música...⏳')
-                query = args.join(' ')
-                get_result = await fetchJson(`https://api.lolhuman.xyz/api/ytplay?apikey=8cedf7d9513db18b1c7571ac&query=${query}`)
-                get_result = get_result.result
-                get_info = get_result.info
-                ini_txt = `Titulo : ${get_info.title}\n`
-                ini_txt += `Uploader : ${get_info.uploader}\n`
-                ini_txt += `Duration : ${get_info.duration}\n`
-                ini_txt += `View : ${get_info.view}\n`
-                ini_txt += `Like : ${get_info.like}\n`
-                ini_txt += `Dislike : ${get_info.dislike}\n`
-                ini_txt += `Description :\n ${get_info.description}\n\n\n`
-                ini_buffer = await getBuffer(get_info.thumbnail)
-                client.sendMessage(from, ini_buffer, image, { quoted: mek, caption: ini_txt })
-                get_audio = await getBuffer(get_result.audio[3].link)
-                client.sendMessage(from, get_audio, audio, { mimetype: 'audio/mp4', filename: `${get_info.title}.mp3`, quoted: mek})
-                get_video = await getBuffer(get_result.video[0].link)
-                client.sendMessage(from, get_video, video, { mimetype: 'video/mp4', filename: `${get_info.title}.mp4`, quoted: mek})
-                break
-                case 'ytplay2':
-                if (args.length < 1) return reply(`qual título mano?\nexemplo : ${prefix + command} Teto Paypal`)
-                reply('Procurando sua música...⏳')
+                case 'toque':
+                if (args.length < 1) return reply(`qual o nome da musica??\nexemplo : ${prefix + command} Teto fashion`)
+                reply('estou baixando senpai❤🍭')
                 query = args.join(' ')
                 get_result = await fetchJson(`https://api.lolhuman.xyz/api/ytplay2?apikey=8cedf7d9513db18b1c7571ac&query=${query}`)
                 get_result = get_result.result
@@ -4055,65 +4037,6 @@ break
                 client.sendMessage(from, get_audio, audio, { mimetype: Mimetype.mp4Audio, filename: `${get_result.title}.mp3`, quoted: mek })
                 get_video = await getBuffer(get_result.video)
                 client.sendMessage(from, get_video, video, { mimetype: Mimetype.mp4, filename: `${get_result.title}.mp4`, quoted: mek })
-                break
-				case 'play1':
-				if (args.length < 1) return reply('Digite o nome da música')
-                reply(mess.wait)
-                play = body.slice(7)
-                anu = await fetchJson(`https://api.zeks.xyz/api/ytplaymp3?q=${play}&apikey=apivinz`)
-               if (anu.error) return reply(anu.error)
-             //    infomp3 = `*MUSICA ENCONTRADA!!!*\nTítulo : ${anu.result.title}\nUrl : ${anu.result.source}\nTamanho : ${anu.result.size}\n\n*ESPERE UM POUQUINHO, N SPAME O CHAT*`
-             msg = ('Musica encontrada enviando...\nFonte:YouTube ')
-                buffer = await getBuffer(anu.result.thumbnail)
-                lagu = await getBuffer(anu.result.url_audio)
-                client.sendMessage(from, buffer, image, {quoted: mek, caption: msg })
-                client.sendMessage(from, lagu, MessageType.audio, {quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": "𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐝𝐨 𝐩𝐨𝐫 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩", "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": fs.readFileSync('./assets/botlogo.webp')} } }, caption: "<//>" })
-                break
-case 'play2':
-if (args.length < 1) return reply('Digite o nome da música')
-                reply('Procurando sua musica..')
-                anu = await fetchJson(`https://api-exteam.herokuapp.com/api/yt/playmp3?query=${body.slice(6)}&apikey=estreia`)
-                if (anu.error) return reply(anu.error)
-         //       ingfomp3 = `*Musica encontrada*\n Titulo : ${anu.title}\nCanal: ${anu.channel}\nPublicado: ${anu.published}\nViews: ${anu.views}\n\n*Enviando audio🎶*`
-         msg = ('Musica encontrada enviando...\nFonte:YouTube ')
-                buffer = await getBuffer(anu.thumb)
-                lagu = await getBuffer(anu.url)
-                client.sendMessage(from, buffer, image, {quoted: mek, caption: msg})
-                client.sendMessage(from, lagu, audio, {mimetype: 'audio/mp4', ptt:true})
-                break
-case 'play3':
-if (args.length < 1) return reply('Digite o nome da música')
-play = body.slice(6)
-reply('Procurando sua música...⏳')
-anu = await fetchJson(`https://api.zeks.xyz/api/ytplaymp4?apikey=apivinz&q=${play}`)
-if (anu.message) return reply('Música não encontrada...\nTente específicar o nome dela.')
-//aanu = await fetchJson(`https://api-tiringa.italuh.repl.co/api/yta?url=${anu.result.source}`)
-aanu = await fetchJson(`https://api-exteam.herokuapp.com/api/yt/playmp3?query=${play}&apikey=estreia`)
-infomp3 = 
-`    MÚSICA ENCONTRADA
-‣ Título: ${anu.result.title}
-‣ Fonte: ${anu.result.source}`
-buffer = await getBuffer(anu.result.thumbnail)
-//lagu = await getBuffer(anu.result.url_audio)
-lagu = await getBuffer(aanu.url)
-setTimeout( () => {
-client.sendMessage(from, buffer, image, {quoted: mek, caption: infomp3})
-}, 1500)
-reply('Baixando e enviando sua música...')
-client.sendMessage(from, lagu, audio, {mimetype: 'audio/mp4', quoted: mek})
-break
-case 'play4':
-if (args.length < 1) return reply('Digite o link da música')
-reply (mess.wait)
-play = body.slice (6)
-anu = await fetchJson(`https://enolaholmes.herokuapp.com/api/yutub/audio?url=${play}&apikey=Alphabot`)
-//Info = 'Musica\ntitulo ${anu.result.title}\ntamanho ${anu.result.filesize}'
-info2 = 'MUSICA ENCONTRADA!!!\nFonte:YouTube\nJa estou te enviando sua musica...'
-buffer = await getBuffer(anu.result.thumb)
-lagu = await getBuffer(anu.result.result)
-client.sendMessage(from, buffer, image, {quoted: mek, caption: info2})
-                client.sendMessage(from, lagu, audio, {mimetype: 'audio/mp4', filename: `${anu.result.title}.mp3`, quoted: mek})
-                await limitAdd(sender)
                 break
                 case 'attp1':	//@loserzinn 愛	
 if (args.length < 1) return reply(`_Coloque o texto _\n\n*Exemplo ${prefix}sttc Decim*`)
