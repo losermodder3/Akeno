@@ -1,4 +1,4 @@
-const help1 = (prefix) => {
+const hentailista = (prefix) => {
 	
       return `
 ┣━━━━°❀ ❬ Magias da akeno* ❭ ❀°━━━━┓
@@ -139,5 +139,5 @@ Fiquei com preguiça de deixar bunito
 *  𝐀𝐤𝐞𝐧𝐨 𝐡𝐢𝐦𝐞𝐣𝐢𝐦𝐚  * ♠️
 ════════════════════`
 }
-exports.help1 = help1
+exports.hentailista = hentailista
 
