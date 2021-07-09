@@ -1796,15 +1796,7 @@ break
 					if (args.length < 1) return reply('Hmmmm')
 
 					if ((args[0]) === 'on') {
-                  break
-                case 'akeno':
-				 data = fs.readFileSync('./src/akeno.js');
-                 jsonData = JSON.parse(data);
-                 randIndex = Math.floor(Math.random() * jsonData.length);
-                 randKey = jsonData[randIndex];
-                hasil = await getBuffer(randKey.result)
-                sendImage(hasil, mek, '*alerta :V*')
-				break									
+                 break				
          case 'moddroid':
 			data = await fetchJson(`https://tobz-api.herokuapp.com/api/moddroid?q=${body.slice(10)}&apikey=${TobzApi}`)
 			hepi = data.result[0] 
