@@ -17,6 +17,14 @@ const help = (prefix) => {
 ║
 ╠══☆〘 NOVOS〙☆══
 ║
+╠🍁 *${prefix}toque(nome da musica)*
+╠🍁 *${prefix}xerek*
+╠🍁 *${prefix}xerek2*
+╠🍁 *${prefix}antispam(não sei se pega)
+╠🍁 *${prefix}juggenaut*
+╠🍁 *${prefix}wallpapercel*
+╠🍁 *${prefix}wallpaperpc*
+╠🍁 *${prefix}animes*
 ╠🍁 *${prefix}nekoanime*
 ╠🍁 *${prefix}hentai1*
 ╠🍁 *${prefix}hentailista*
