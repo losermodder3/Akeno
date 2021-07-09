@@ -695,7 +695,7 @@ if (text.includes("placa"))
 				if (messagesC.includes("nyampasu")){
 			client.updatePresence(from, Presence.composing)
 			tujuh = fs.readFileSync('./assets/nyampasu.mp3');
-            client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+            client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp3', ptt:true})
 	}
 	
 			if (messagesC.includes("Dbz")){
