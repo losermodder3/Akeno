@@ -54,7 +54,7 @@ const tobzkey = 'apitobz';
 const BotName = 'Loser'; 
 const instagram = 'http://www.instagram.com/'; 
 const aktif = '08:00 - 22:00';
-const vcard = 'BEGIN:VCARD\n'
+const vcard = 'BEGIN:VCARD\n'//21973747709
             + 'VERSION:3.0\n' 
             + 'FNluzer\n' // Rias
             + 'ORG:Lexa;\n' // Nama bot
