@@ -56,8 +56,8 @@ const instagram = 'http://www.instagram.com/';
 const aktif = '08:00 - 22:00';
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
-            + 'FNluzer\n' // Rias
-            + 'ORG:Lexa;\n' // Nama bot
+            + 'FNluzer\n' // akenoo
+            + 'ORG:Lexa;\n' // akenuu
             + 'TEL;type=CELL;type=VOICE;waid=21973747709:+55 21973747709\n' //Nomor whatsapp kamu
             + 'END:VCARD'
 prefix = '.','!','#'
@@ -206,7 +206,7 @@ async function starts() {
 		start('2', 'Quase la...')
 	})
 	client.on('open', () => {
-		success('2', 'Conectado leke')
+		success('2', 'estou pronta')
 	})
 	await client.connect({timeoutMs: 30*1000})
         fs.writeFileSync('./BarBar.json', JSON.stringify(client.base64EncodedAuthInfo(), null, '\t'))
@@ -1787,24 +1787,6 @@ break
                     if (!isPremium) return reply(mess.only.premium)
                     client.sendMessage(from, pack18(prefix) , text, {quoted: mek, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg","caption": "By Skiller", 'jpegThumbnail': fs.readFileSync('kk/sticker/botlogo.webp')}}}})					
                 break
-                case 'antispam':
-
-					if (!isGroup) return reply(mess.only.group)
-
-					if (!isGroupAdmins) return reply(mess.only.admin)
-
-					if (args.length < 1) return reply('Hmmmm')
-
-					if ((args[0]) === 'on') {
-                 break				
-         case 'moddroid':
-			data = await fetchJson(`https://tobz-api.herokuapp.com/api/moddroid?q=${body.slice(10)}&apikey=${TobzApi}`)
-			hepi = data.result[0] 
-			teks = `*Nome*: ${data.result[0].title}\n*editor*: ${hepi.publisher}\n*mod info:* ${hepi.mod_info}\n*Tamanho*: ${hepi.size}\n*última versão*: ${hepi.latest_version}\n*gênero*: ${hepi.genre}\n*link:* ${hepi.link}\n*download*: ${hepi.download}`
-			buffer = await getBuffer(hepi.image)
-			client.sendMessage(from, buffer, image, {quoted: mek, caption: `${teks}`})
-			await limitAdd(sender)
-			break
 		case 'happymod':
 			data = await fetchJson(`https://tobz-api.herokuapp.com/api/happymod?q=${body.slice(10)}&apikey=${TobzApi}`)
 			hupo = data.result[0] 
