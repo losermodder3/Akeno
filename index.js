@@ -3451,7 +3451,7 @@ break
 				case 'wallpapercel':
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiK6ksl-ztPhWE3LqUOk4NKeNMf_Pxm_bA0A&usqp=CAU`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: esta ai senpai})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: esta ai senpai'})
 					break
 				case 'bomdia':
 					memein = await kagApi.memeindo()
