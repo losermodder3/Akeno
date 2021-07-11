@@ -52,18 +52,18 @@ const apivhtear = 'apivhtear';
 const apibarbar = 'apibarbar';
 const tobzkey = 'apitobz';
 const BotName = 'Loser'; 
-const instagram = 'http://www.instagram.com/'; 
+const instagram = 'http://www.instagram.com/@loserzinn'; 
 const aktif = '08:00 - 22:00';
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
-            + 'FNluzer\n' // akenoo
+            + 'FN:loser\n' // akenoo
             + 'ORG:Lexa;\n' // akenuu
             + 'TEL;type=CELL;type=VOICE;waid=21973747709:+55 21973747709\n' //Nomor whatsapp kamu
             + 'END:VCARD'
 prefix = '.','!','#'
 blocked = []
 limitawal = '999999999'
-cr = '*Rias*'
+cr = '*loser*'
 
 /*********** LOAD FILE ***********/
 const _leveling = JSON.parse(fs.readFileSync('./database/group/leveling.json'))
