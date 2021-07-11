@@ -695,7 +695,7 @@ if (text.includes("placa"))
 				if (messagesC.includes("nyampasu")){
 			client.updatePresence(from, Presence.composing)
 			tujuh = fs.readFileSync('./assets/nyampasu.mp3');
-            client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp3', ptt:true})
+            client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 	
 			if (messagesC.includes("Dbz")){
@@ -718,7 +718,7 @@ if (text.includes("placa"))
 					if (messagesC.includes("juggenaut")){
 			client.updatePresence(from, Presence.composing)
 			tujuh = fs.readFileSync('./assets/juggenautdrive.mp4');
-            client.sendMessage(from, tujuh, MessageType.video, {quoted: mek, mimetype: 'video/mp4', ptt:true})
+            client.sendMessage(from, tujuh, MessageType.video, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 	
 			if (messagesC.includes("bv")){
@@ -891,6 +891,14 @@ if (text.includes("placa"))
 					buffer = await getBuffer(anu.result)
 					client.sendMessage(from, buffer, video, {mimetype: 'video/mp4', filename: `${anu.title}.mp4`, quoted: mek})
 					break
+					case 'yamete':
+                       tujuh = fs.readFileSync('./assets/Yamete.mp3');
+                       client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+                    break
+                    	case 'lofi':
+                       tujuh = fs.readFileSync('./assets/lofizin;.mp3');
+                       client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+                    break
 		case 'iri':
 			client.sendPtt(from, './lindy/iri.mp3', {quoted: mek, ptt:true})
 			break
@@ -3411,13 +3419,13 @@ break
 					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxTzuY0bBkVioGS-wRvr0rdu7vCOT-oOpNww&usqp=CAU`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'achei lindo'})
 					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi_K_Ojs_pVRzmjSAHPqYWvWjk8UTUwgZfDA&usqp=CAU`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'achei lindo'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'achei lindo'}
 					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTBO1P4kOz7MUmorlhD4Fh5RnpI9UBrGs0qA&usqp=CAU`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'achei lindo'})
 					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt6sgbaV1HxAB3d4Ewo_wq-ksij3Ftg00Wzg&usqp=CAU`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'achei lindo'})
 					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO9axucpwVhLYlS_iHb9aP_cx8B073vqG0Fg&usqp=CAU`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'achei lindo❤'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'achei lindo'})
 					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJRlawTmeg45yWIDV8AhEoqMxctytuUAzxEg&usqp=CAU`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'animezinhuuu^-^'})
 					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx4nqz7qNZ22NepthozV9pQB6vrAWRfoqXeA&usqp=CAU`)
@@ -3479,15 +3487,15 @@ break
                 hasil = await getBuffer(randKey.result)
                 sendImage(hasil, mek, '*Belle :V*')
 				break
-				case 'xerek1':
+				case 'cjanao':
 					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsYlR64ekcy-2RK_oBArzy_NbdwaC2y1FsjA&usqp=CAU`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'xereca😎🤙🤙️'})
+					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpJB115EC1g7pLB-SOu2VoOY202q-hGuSXFg&usqp=CAU`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'agaragam😎🤙🤙️'})
 					break
-				case 'xerek2':
+				case 'bolsoegirl':
 					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnWWZl0lqe1KWrChTng5MyBBRDnCbPZihpPA&usqp=CAU`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '️xereca egirl😳😳'})
+					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT90iP0VMtZbCiwBITys-BkcYBcLoqZqgMjiw&usqp=CAU`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '️bonaro gosto egirl😳😳'})
 					break
 				case 'malkova':
 					memein = await kagApi.memeindo()
@@ -4259,4 +4267,4 @@ case 'wikipedia':
 		}
 	})
 }
-starts()
+starts();
