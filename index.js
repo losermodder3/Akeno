@@ -673,7 +673,7 @@ if (text.includes("placa"))
 	
 		if (messagesC.includes("vsfd")){
 			client.updatePresence(from, Presence.composing)
-			reply("bora juntos?")
+			reply("bora juntos? seu arrombado")
 	}
 	
 		if (messagesC.includes("akeno")){
@@ -681,7 +681,7 @@ if (text.includes("placa"))
 			reply("estou aqui")
 	}
 	
-		if (messagesC.includes("bot")){
+		if (messagesC.includes("ola")){
 			client.updatePresence(from, Presence.composing)
 			reply("oi pessoal")
 	}
@@ -694,7 +694,7 @@ if (text.includes("placa"))
 	
 				if (messagesC.includes("nyampasu")){
 			client.updatePresence(from, Presence.composing)
-			tujuh = fs.readFileSync('./assets/nyampasu.mp3');
+			tujuh = fs.readFileSync('./assets/Nyampasu.mp3');
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 	
@@ -4268,3 +4268,4 @@ case 'wikipedia':
 	})
 }
 starts();
+ 
