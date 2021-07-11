@@ -3419,7 +3419,7 @@ break
 					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxTzuY0bBkVioGS-wRvr0rdu7vCOT-oOpNww&usqp=CAU`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'achei lindo'})
 					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi_K_Ojs_pVRzmjSAHPqYWvWjk8UTUwgZfDA&usqp=CAU`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'achei lindo'}
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'achei lindo'})
 					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTBO1P4kOz7MUmorlhD4Fh5RnpI9UBrGs0qA&usqp=CAU`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'achei lindo'})
 					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt6sgbaV1HxAB3d4Ewo_wq-ksij3Ftg00Wzg&usqp=CAU`)
