@@ -18,8 +18,8 @@ const help = (prefix) => {
 ╠══☆〘 NOVOS〙☆══
 ║
 ╠🍁 *${prefix}toque(nome da musica)*
-╠🍁 *${prefix}xerek*
-╠🍁 *${prefix}xerek2*
+╠🍁 *${prefix}cjanao*
+╠🍁 *${prefix}bolsoegirl*
 ╠🍁 *${prefix}antispam(não sei se pega)
 ╠🍁 *${prefix}juggenaut*
 ╠🍁 *${prefix}wallpapercel*
