@@ -737,9 +737,9 @@ if (text.includes("placa"))
                 sendImage(hasil, mek, '*GELAP BOS :V*')
 	
 	
-	              	if (messagesC.includes("mandahentai")){
+	              	if (messagesC.includes("mandameme")){
 			client.updatePresence(from, Presence.composing)
-			data = fs.readFileSync('./src/hentai1.js');
+			data = fs.readFileSync('./src/lolizinha.js');
                  jsonData = JSON.parse(data);
                  randIndex = Math.floor(Math.random() * jsonData.length);
                  randKey = jsonData[randIndex];
@@ -802,8 +802,7 @@ if (text.includes("placa"))
 					teks += `Total : ${sayrandom.length}`
 					client.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": sayrandom}})
 					break
-				case 'ssweb':
-				
+				case 'ssweb'
 					if (args.length < 1) return reply('Cadê o url tio')
 					tekss = body.slice(7)
 					reply(mess.wait)
@@ -3467,7 +3466,7 @@ break
 					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3z56CdoNc3AtrAraimR3LgPUTj2d3GvjILA&usqp=CAU`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*-^'})
 					break
-						case 'egirl':
+				case 'egirl'
 				    if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					memein = await kagApi.memeindo()
@@ -4316,12 +4315,12 @@ case 'wikipedia':
 						console.log(muehe)
 						reply(muehe)
 					} else {
-						console.log(color('[ERROR]','red'), 'eita bixo comando não registrado de', color(sender.split('@')[0]))
-					    }
-                             }
-			}
+						return //console.log(color('[WARN]','red'), 'Unregistered Command from', color(sender.split('@')[0]))
+					}
+                           }
 		} catch (e) {
 			console.log('Error : %s', color(e, 'red'))
 		}
-})
+	})
+}
 starts()
