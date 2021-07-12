@@ -3479,7 +3479,7 @@ break
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'perfeita'})
 					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO9Yh5wCicrPK0S9JnnNp0KlUpnitF4hr9Lg&usqp=CAU`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'crybaby?'})
-					buffer = await getBuffer(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV7RuSnwuYS879a9R3VBYTCGqO1uRCxRnqgg&usqp=CAU`)
+					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV7RuSnwuYS879a9R3VBYTCGqO1uRCxRnqgg&usqp=CAU`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'mano😳 essa me deixou excitado'})
 					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD-WMkjiYM0STx3CHG1-aCNV5kK4ezqMAW8Q&usqp=CAU`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'gostosa'})
