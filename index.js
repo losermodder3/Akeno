@@ -4308,7 +4308,7 @@ case 'wikipedia':
 					} else {
 						reply('Só Foto senpai')
 					}
-					break
+							break
 				default:
 					if (isGroup && isSimi && budy != undefined) {
 						console.log(budy)
