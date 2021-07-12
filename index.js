@@ -4319,7 +4319,7 @@ case 'wikipedia':
 						console.log(color('[ERROR]','red'), 'eita bixo comando não registrado de', color(sender.split('@')[0]))
 					}
                            }
-		} 'catch' (e) {
+		} 'catch' (e) '{'
 			console.log('Error : %s', color(e, 'red'))
 		}
 	})
