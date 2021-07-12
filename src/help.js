@@ -21,7 +21,6 @@ const help = (prefix) => {
 ╠🍁 *${prefix}toque(nome da musica)*
 ╠🍁 *${prefix}cjanao*
 ╠🍁 *${prefix}bolsoegirl*
-╠🍁 *${prefix}antispam(não sei se pega)
 ╠🍁 *${prefix}juggenaut*
 ╠🍁 *${prefix}wallpapercel*
 ╠🍁 *${prefix}wallpaperpc*
@@ -126,6 +125,13 @@ const help = (prefix) => {
 ║
 ╠🍁 *${prefix}antilink [1/0]*
 ╠🍁 *${prefix}antiracismo [on/off]*
+║
+╠══♤〘 comandos de voz 〙♧══
+║
+╠🍁 *${prefix}nyampasu*
+╠🍁 *${prefix}lofi*
+╠🍁 *${prefix}bunny*
+╠🍁 *${prefix}dolinho*
 ║
 ║╠══🍁〘 𝗗𝗢𝗡𝗢 〙🍁══
 ║
