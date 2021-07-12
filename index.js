@@ -4295,7 +4295,7 @@ case 'wikipedia':
 	teks = ` ${send.result.result}`
 	client.sendMessage(from, teks, text, {quoted: mek})
 	        break
-				case 'wait':
+			case 'wait':
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 						reply(mess.wait)
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
@@ -4306,7 +4306,7 @@ case 'wikipedia':
 							reply(err)
 						})
 					} else {
-						reply('Só Foto senpai')
+						reply('Só uma foto mano')
 					}
 					break
 				default:
@@ -4319,7 +4319,7 @@ case 'wikipedia':
 						console.log(color('[ERROR]','red'), 'eita bixo comando não registrado de', color(sender.split('@')[0]))
 					}
                            }
-		} 'catch' (e) '{'
+		} catch (e) {
 			console.log('Error : %s', color(e, 'red'))
 		}
 	})
