@@ -52,18 +52,18 @@ const apivhtear = 'apivhtear';
 const apibarbar = 'apibarbar';
 const tobzkey = 'apitobz';
 const BotName = 'Loser'; 
-const instagram = 'http://www.instagram.com/@loserzinn'; 
+const instagram = 'http://www.instagram.com/'; 
 const aktif = '08:00 - 22:00';
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
-            + 'FN:loser\n' // akenoo
+            + 'FNluzer\n' // akenoo
             + 'ORG:Lexa;\n' // akenuu
             + 'TEL;type=CELL;type=VOICE;waid=21973747709:+55 21973747709\n' //Nomor whatsapp kamu
             + 'END:VCARD'
 prefix = '.','!','#'
 blocked = []
 limitawal = '999999999'
-cr = '*loser*'
+cr = '*Rias*'
 
 /*********** LOAD FILE ***********/
 const _leveling = JSON.parse(fs.readFileSync('./database/group/leveling.json'))
@@ -715,10 +715,10 @@ if (text.includes("placa"))
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 	
-					if (messagesC.includes("juggenaut")){
+					if (messagesC.includes("juggenautdrive")){
 			client.updatePresence(from, Presence.composing)
-			tujuh = fs.readFileSync('./assets/juggenautdrive.mp4');
-            client.sendMessage(from, tujuh, MessageType.video, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+			tujuh = fs.readFileSync('./assets/Juggenautdrive.mp4');
+            client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 	
 			if (messagesC.includes("bv")){
@@ -735,6 +735,17 @@ if (text.includes("placa"))
                  randKey = jsonData[randIndex];
                 hasil = await getBuffer(randKey.result)
                 sendImage(hasil, mek, '*GELAP BOS :V*')
+	
+	
+	              	if (messagesC.includes("mandahentai")){
+			client.updatePresence(from, Presence.composing)
+			data = fs.readFileSync('./src/hentai1.js');
+                 jsonData = JSON.parse(data);
+                 randIndex = Math.floor(Math.random() * jsonData.length);
+                 randKey = jsonData[randIndex];
+                hasil = await getBuffer(randKey.result)
+                sendImage(hasil, mek, '*GELAP BOS :V*')
+	
 	}
 
 
@@ -895,8 +906,16 @@ if (text.includes("placa"))
                        tujuh = fs.readFileSync('./assets/Yamete.mp3');
                        client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
                     break
+                    	case 'bunny':
+                       tujuh = fs.readFileSync('./assets/bunny.mp3');
+                       client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+                    break
                     	case 'lofi':
-                       tujuh = fs.readFileSync('./assets/lofizin;.mp3');
+                       tujuh = fs.readFileSync('./assets/lofizin.mp3');
+                       client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+                    break
+                    case 'dolinho':
+                       tujuh = fs.readFileSync('./assets/Dolinho.mp3');
                        client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
                     break
 		case 'iri':
@@ -1786,6 +1805,15 @@ break
 					break
                 case 'lolizinha':
 				 data = fs.readFileSync('./src/lolizinha.js');
+                 jsonData = JSON.parse(data);
+                 randIndex = Math.floor(Math.random() * jsonData.length);
+                 randKey = jsonData[randIndex];
+                hasil = await getBuffer(randKey.result)
+                sendImage(hasil, mek, '*GELAP BOS :V*')
+				client.sendMessage(from, buffer, image, {quoted: mek, caption: 'lolii❤❤'})
+				break
+				 case 'hentai2':
+				 data = fs.readFileSync('./src/hentai1.js');
                  jsonData = JSON.parse(data);
                  randIndex = Math.floor(Math.random() * jsonData.length);
                  randKey = jsonData[randIndex];
@@ -3439,6 +3467,35 @@ break
 					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3z56CdoNc3AtrAraimR3LgPUTj2d3GvjILA&usqp=CAU`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*-^'})
 					break
+						case 'egirl':
+				    if (!isGroup) return reply(mess.only.group)
+					if (!isGroupAdmins) return reply(mess.only.admin)
+					memein = await kagApi.memeindo()
+					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDujmTWyxEwY2YLRFcx6xrp9Da43RGwPCeQA&usqp=CAU`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'to de pau duro'})
+					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9odjE7KxDTS3uZnZxL3w-u936LmNS2fBVAA&usqp=CAU`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'linda demais'})
+					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxvTV72lXLCfIZlxoMQi-JrfHtZBwtkQgtEg&usqp=CAU`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'perfeita'})
+					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO9Yh5wCicrPK0S9JnnNp0KlUpnitF4hr9Lg&usqp=CAU`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'crybaby?'})
+					buffer = await getBuffer(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV7RuSnwuYS879a9R3VBYTCGqO1uRCxRnqgg&usqp=CAU`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'mano😳 essa me deixou excitado'})
+					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD-WMkjiYM0STx3CHG1-aCNV5kK4ezqMAW8Q&usqp=CAU`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'gostosa'})
+					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqwx8vUsDQtIkZ1wShMovh1Kv5SGAD4XMHNQ&usqp=CAU`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'egirl pobre😳😳🤙'})
+					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTWOdSUtezvPVlcixsXXw6CXa3tYvLdR3Xug&usqp=CAU`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'fofinha'})
+					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGfU2oJS2EAZILZXT0yaLUPmilR7ElcXAJIw&usqp=CAU`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'SAFADA'})
+					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMNuCReJDWuZpGWZAs7m601vRdKCDEbajAgA&usqp=CAU`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'melhor de todas'})
+					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvBakivOhS4oYRK-qbUy-_Ex1uzWtcKA7pcA&usqp=CAU`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '❤'})
+					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCVayvcsb_gFi46GEO3DW6Sz-hrIUY8r6LdA&usqp=CAU`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'ainnn'})
+					break
 				case 'belle2':
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://i.pinimg.com/originals/24/5f/91/245f91208f9030724dbc8d1bede2e9ff.gif`)
@@ -3495,7 +3552,7 @@ break
 				case 'bolsoegirl':
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT90iP0VMtZbCiwBITys-BkcYBcLoqZqgMjiw&usqp=CAU`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '️bonaro gosto egirl😳😳'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '️bonaro egirl😳😳'})
 					break
 				case 'malkova':
 					memein = await kagApi.memeindo()
@@ -4268,4 +4325,3 @@ case 'wikipedia':
 	})
 }
 starts();
- 
