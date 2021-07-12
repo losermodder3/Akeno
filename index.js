@@ -1812,7 +1812,34 @@ break
 					if (args.length < 1) return reply('Hmmmm')
 
 					if ((args[0]) === 'on') {
-                  break					
+                  break				
+         case 'moddroid':
+			data = await fetchJson(`https://tobz-api.herokuapp.com/api/moddroid?q=${body.slice(10)}&apikey=${TobzApi}`)
+			hepi = data.result[0] 
+			teks = `*Nome*: ${data.result[0].title}\n*editor*: ${hepi.publisher}\n*mod info:* ${hepi.mod_info}\n*Tamanho*: ${hepi.size}\n*última versão*: ${hepi.latest_version}\n*gênero*: ${hepi.genre}\n*link:* ${hepi.link}\n*download*: ${hepi.download}`
+			buffer = await getBuffer(hepi.image)
+			client.sendMessage(from, buffer, image, {quoted: mek, caption: `${teks}`})
+			await limitAdd(sender)
+			break
+		case 'happymod':
+			data = await fetchJson(`https://tobz-api.herokuapp.com/api/happymod?q=${body.slice(10)}&apikey=${TobzApi}`)
+			hupo = data.result[0] 
+			teks = `*Nome*: ${data.result[0].title}\n*versão*: ${hupo.version}\n*Tamanho:* ${hupo.size}\n*root*: ${hupo.root}\n*compra*: ${hupo.price}\n*link*: ${hupo.link}\n*download*: ${hupo.download}`
+			buffer = await getBuffer(hupo.image)
+			client.sendMessage(from, buffer, image, {quoted: mek, caption: `${teks}`})
+			await limitAdd(sender)
+			break
+	
+				case 'naruto':
+
+					reply(mess.wait)
+					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=Naruto`, {method: 'get'})
+					naru = JSON.parse(JSON.stringify(anu));
+					to =  naru[Math.floor(Math.random() * naru.length)];
+					nye = await getBuffer(to)
+					client.sendMessage(from, nye, image, { caption: 'naruto!!', quoted: mek })
+					await limitAdd(sender)
+					break 
 				case 'nsfwboquete':
 
 					reply(mess.wait)
@@ -1821,6 +1848,26 @@ break
 					to =  naru[Math.floor(Math.random() * naru.length)];
 					nye = await getBuffer(to)
 					client.sendMessage(from, nye, image, { caption: 'naruto!!', quoted: mek })
+					await limitAdd(sender)
+					break   
+				case  minato':
+
+					reply(mess.wait)
+					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=Minato`, {method: 'get'})
+					min = JSON.parse(JSON.stringify(anu));
+					ato =  min[Math.floor(Math.random() * min.length)];
+					nye = await getBuffer(ato)
+					client.sendMessage(from, nye, image, { caption: 'minato!!', quoted: mek })
+					await limitAdd(sender)
+					break 
+				case 'boruto':
+
+					reply(mess.wait)
+					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=Boruto`, {method: 'get'})
+					bor = JSON.parse(JSON.stringify(anu));
+					uto =  bor[Math.floor(Math.random() * bor.length)];
+					nye = await getBuffer(uto)
+					client.sendMessage(from, nye, image, { caption: 'boruto!!', quoted: mek })
 					await limitAdd(sender)
 					break 
 				case 'animecry':
@@ -3416,35 +3463,6 @@ break
 					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3z56CdoNc3AtrAraimR3LgPUTj2d3GvjILA&usqp=CAU`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*-^'})
 					break
-				case 'egirl'
-				    if (!isGroup) return reply(mess.only.group)
-					if (!isGroupAdmins) return reply(mess.only.admin)
-					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDujmTWyxEwY2YLRFcx6xrp9Da43RGwPCeQA&usqp=CAU`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'to de pau duro'})
-					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9odjE7KxDTS3uZnZxL3w-u936LmNS2fBVAA&usqp=CAU`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'linda demais'})
-					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxvTV72lXLCfIZlxoMQi-JrfHtZBwtkQgtEg&usqp=CAU`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'perfeita'})
-					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO9Yh5wCicrPK0S9JnnNp0KlUpnitF4hr9Lg&usqp=CAU`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'crybaby?'})
-					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV7RuSnwuYS879a9R3VBYTCGqO1uRCxRnqgg&usqp=CAU`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'mano😳 essa me deixou excitado'})
-					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD-WMkjiYM0STx3CHG1-aCNV5kK4ezqMAW8Q&usqp=CAU`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'gostosa'})
-					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqwx8vUsDQtIkZ1wShMovh1Kv5SGAD4XMHNQ&usqp=CAU`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'egirl pobre😳😳🤙'})
-					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTWOdSUtezvPVlcixsXXw6CXa3tYvLdR3Xug&usqp=CAU`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'fofinha'})
-					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGfU2oJS2EAZILZXT0yaLUPmilR7ElcXAJIw&usqp=CAU`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'SAFADA'})
-					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMNuCReJDWuZpGWZAs7m601vRdKCDEbajAgA&usqp=CAU`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'melhor de todas'})
-					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvBakivOhS4oYRK-qbUy-_Ex1uzWtcKA7pcA&usqp=CAU`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '❤'})
-					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCVayvcsb_gFi46GEO3DW6Sz-hrIUY8r6LdA&usqp=CAU`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'ainnn'})
-					break
 				case 'belle2':
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://i.pinimg.com/originals/24/5f/91/245f91208f9030724dbc8d1bede2e9ff.gif`)
@@ -4181,7 +4199,7 @@ teks = body.slice(10)
 if (teks.length > 10) return reply('O texto é longo, até 8 caracteres')
 reply('*Estou fazendo... *')
 buffer = await getBuffer(`https://rsymenti.sirv.com/images%20(10).jpeg?text.0.text=${teks}&text.0.position.gravity=south&text.0.position.x=4%25&text.0.position.y=-32%25&text.0.align=left&text.0.size=34&text.0.color=000000&text.0.opacity=78&text.0.background.opacity=78&text.0.outline.blur=72&text.0.outline.opacity=74`)
-client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Tomar senpai'})
+client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Toma senpai'})
 break
 case 'space': //@loserzinn 愛
 teks1 = txt.split("|")[0];
