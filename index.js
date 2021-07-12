@@ -4320,7 +4320,7 @@ case 'wikipedia':
 					    }
                              }
 		} catch (e) {
-			console.log('Error : %s', color(e, 'red'))
+			console.log('Error :; %s', color(e, 'red'))
 		}
 	})
 }
