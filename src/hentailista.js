@@ -1,5 +1,4 @@
-const hentailista = (prefix) => {
-	
+const hentailista = (prefix) => {	
       return `
 ┣━━━━°❀ ❬ Magias da akeno* ❭ ❀°━━━━┓
 ┃
