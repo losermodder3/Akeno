@@ -4324,4 +4324,4 @@ case 'wikipedia':
 		}
 	})
 }
-starts();
+starts()
