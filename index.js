@@ -4294,7 +4294,21 @@ case 'wikipedia':
 	send = await fetchJson(`https://api-exteam.herokuapp.com/api/info/wikipedia?search=${teks}&apikey=pip`)
 	teks = ` ${send.result.result}`
 	client.sendMessage(from, teks, text, {quoted: mek})
-
+	        break
+				case 'wait':
+					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
+						reply(mess.wait)
+						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
+						media = await client.downloadMediaMessage(encmedia)
+						await wait(media).then(res => {
+							client.sendMessage(from, res.video, video, {quoted: mek, caption: res.teks.trim()})
+						}).catch(err => {
+							reply(err)
+						})
+					} else {
+						reply('Só Foto senpai')
+					}
+					break
 				default:
 					if (isGroup && isSimi && budy != undefined) {
 						console.log(budy)
@@ -4302,37 +4316,10 @@ case 'wikipedia':
 						console.log(muehe)
 						reply(muehe)
 					} else {
-						console.log(color('[ERROR]','red'), 'comando não registrado de', color(sender.split('@')[0]))
+						console.log(color('[ERROR]','red'), 'eita bixo comando não registrado de', color(sender.split('@')[0]))
 					}
                            }
-		} catch (e) {
-			console.log('Error : %s', color(e, 'red'))
-		}
-	})
-}
-starts()
-, 'não existe esse comando de', color(sender.split('@')[0]))
-					}
-                           }
-		} catch (e) {
-			console.log('Error : %s', color(e, 'red'))
-		}
-	})
-}
-starts()
-, {quoted: mek})
-
-				default:
-					if (isGroup && isSimi && budy != undefined) {
-						console.log(budy)
-						muehe = await simih(budy)
-						console.log(muehe)
-						reply(muehe)
-					} else {
-						console.log(color('[ERROR]','red'), 'existe esse comando? de', color(sender.split('@')[0]))
-					}
-                           }
-		} catch (e) {
+		} 'catch' (e) {
 			console.log('Error : %s', color(e, 'red'))
 		}
 	})
