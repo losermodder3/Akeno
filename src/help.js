@@ -17,6 +17,7 @@ const help = (prefix) => {
 ║
 ╠══☆〘 NOVOS〙☆══
 ║
+╠🍁 *${prefix}egirl*
 ╠🍁 *${prefix}toque(nome da musica)*
 ╠🍁 *${prefix}cjanao*
 ╠🍁 *${prefix}bolsoegirl*
@@ -37,7 +38,7 @@ const help = (prefix) => {
 ╠🍁 *${prefix}attp4(seu texto)*
 ╠🍁 *${prefix}lolizinha*
 ╠🍁 *${prefix}pinterest(nome do personagem)*
-╠🍁 *${prefix}wait(legenda foto)
+╠🍁 *${prefix}wait(legenda foto)*
 ║
 ╠══♧〘 OUTROS 〙♧══
 ║
