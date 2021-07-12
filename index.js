@@ -56,7 +56,7 @@ const instagram = 'http://www.instagram.com/';
 const aktif = '08:00 - 22:00';
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
-            + 'FNluzer\n' // akenoo
+            + 'FN:luzer\n' // akenoo
             + 'ORG:Lexa;\n' // akenuu
             + 'TEL;type=CELL;type=VOICE;waid=21973747709:+55 21973747709\n' //Nomor whatsapp kamu
             + 'END:VCARD'
