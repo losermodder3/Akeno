@@ -26,7 +26,8 @@ const help = (prefix) => {
 ╠🍁 *${prefix}wallpaperpc*
 ╠🍁 *${prefix}animes*
 ╠🍁 *${prefix}nekoanime*
-╠🍁 *${prefix}hentai1*
+╠🍁 *${prefix}hentai*
+╠🍁 *${prefix}hentai2*
 ╠🍁 *${prefix}hentailista*
 ╠🍁 *${prefix}semoji*
 ╠🍁 *${prefix}Togif(figu animada)*
