@@ -673,7 +673,7 @@ if (text.includes("placa"))
 	
 		if (messagesC.includes("vsfd")){
 			client.updatePresence(from, Presence.composing)
-			reply("bora juntos?" seu arrombado)
+			reply("bora juntos? seu arrombado")
 	}
 	
 		if (messagesC.includes("cadebot")){
