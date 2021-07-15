@@ -223,7 +223,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `olaaa@${num.split('@')[0]}\nBem vindo ao clã🍭;*${mdata.subject}*\n\nEspere que goste do grupo, temos gay, puta, traveco, noia, corno, todo q vc possar imaginar! 🐰`
+				teks = `olaaa@${num.split('@')[0]}\nBem vindo ao clã🍭`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 				client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
