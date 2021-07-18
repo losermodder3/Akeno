@@ -20,8 +20,7 @@ const help = (prefix) => {
 ╠🍁 *${prefix}egirl*
 ╠🍁 *${prefix}toque(nome da musica)*
 ╠🍁 *${prefix}cjanao*
-╠🍁 *${prefix}bolsoegirl*
-╠🍁 *${prefix}juggenaut*
+╠🍁 *${prefix}bolsoegirl**
 ╠🍁 *${prefix}wallpapercel*
 ╠🍁 *${prefix}wallpaperpc*
 ╠🍁 *${prefix}animes*
@@ -131,8 +130,16 @@ const help = (prefix) => {
 ║
 ╠🍁 *${prefix}nyampasu*
 ╠🍁 *${prefix}lofi*
+╠🍁 *${prefix}ben*
+╠🍁 *${prefix}play2*
+╠🍁 *${prefix}energia*
 ╠🍁 *${prefix}bunny*
 ╠🍁 *${prefix}dolinho*
+║
+╠══♤〘 comandos de video〙♧══
+║
+╠🍁 *${prefix}juggenaut*
+╠🍁 *${prefix}welcome*
 ║
 ║╠══🍁〘 𝗗𝗢𝗡𝗢 〙🍁══
 ║
