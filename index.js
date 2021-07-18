@@ -686,22 +686,22 @@ if (text.includes("placa"))
 			reply("euuuu")
 	}
 	
-			if (messagesC.includes("bah")){
+			if (messagesC.includes("play2")){
 			client.updatePresence(from, Presence.composing)
-			tujuh = fs.readFileSync('./assets/bahc.mp3');
+			tujuh = fs.readFileSync('./assets/play.mp3');
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 	
-				if (messagesC.includes("trau")){
+				if (messagesC.includes("welcome")){
 			client.updatePresence(from, Presence.composing)
-			tujuh = fs.readFileSync('./assets/blau.mp3');
+			tujuh = fs.readFileSync('./assets/jack.mp4');
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 	
 				if (messagesC.includes("juggenautdrive")){
 			client.updatePresence(from, Presence.composing)
 			tujuh = fs.readFileSync('./assets/Juggenautdrive.mp4');
-            client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+            client.sendMessage(from, tujuh, MessageType.video, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 	        if (messagesC.includes("sexo")){
 			client.updatePresence(from, Presence.composing)
@@ -715,15 +715,15 @@ if (text.includes("placa"))
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 	
-					if (messagesC.includes("grita")){
+					if (messagesC.includes("ben")){
 			client.updatePresence(from, Presence.composing)
-			tujuh = fs.readFileSync('./assets/a.mp3');
+			tujuh = fs.readFileSync('./assets/bem.mp3');
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 	
-			if (messagesC.includes("bv")){
+			if (messagesC.includes("energia")){
 			client.updatePresence(from, Presence.composing)
-			tujuh = fs.readFileSync('./assets/bv.mp3');
+			tujuh = fs.readFileSync('./assets/energia.mp3');
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 	
@@ -4368,12 +4368,12 @@ break
 						for (let _ of anu) {
 							client.sendMessage(_.jid, buff, image, {caption: `[ admin bot Broadcast ]\n\n${body.slice(4)}`})
 						}
-						reply('Transmissão enviada')
+						reply('aviso de gremorys')
 					} else {
 						for (let _ of anu) {
 							sendMess(_.jid, `[ *TRANSMISSÃO* ]\n\n${body.slice(4)}`)
 						}
-						reply('Transmissão enviada')
+						reply('mensagem enviada💜')
 					}
 					break
 				case 'wait':
@@ -4387,7 +4387,7 @@ break
 							reply(err)
 						})
 					} else {
-						reply('Só uma foto mano')
+						reply('Só uma foto sempai')
 					}
 					break
 				default:
