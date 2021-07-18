@@ -695,13 +695,13 @@ if (text.includes("placa"))
 				if (messagesC.includes("welcome")){
 			client.updatePresence(from, Presence.composing)
 			tujuh = fs.readFileSync('./assets/jack.mp4');
-            client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+            client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'mp4', ptt:true})
 	}
 	
 				if (messagesC.includes("juggenautdrive")){
 			client.updatePresence(from, Presence.composing)
 			tujuh = fs.readFileSync('./assets/Juggenautdrive.mp4');
-            client.sendMessage(from, tujuh, MessageType.video, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+            client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 	        if (messagesC.includes("sexo")){
 			client.updatePresence(from, Presence.composing)
@@ -751,8 +751,8 @@ if (text.includes("placa"))
 				case 'menu':
 					client.sendMessage(from, help(prefix), text)
 					break
-				case 'help1':
-				case 'menu1':
+				case 'hentailista':
+				case 'hentailista':
 					client.sendMessage(from, help1(prefix), text)
 					break
 					case 'kiss':
