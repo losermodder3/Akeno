@@ -28,7 +28,6 @@ const { recognize } = require('./lib/ocr')
 const fs = require('fs')
 const anime = JSON.parse(fs.readFileSync('./database/json/anime.json'))
 const antiracismo = JSON.parse(fs.readFileSync('./database/json/antiracismo.json'))
-const antifake = JSON.parse(fs.readFileSync('./src/antifake.json'))
 const nsfw = JSON.parse(fs.readFileSync('./database/json/nsfw.json'))
 const moment = require('moment-timezone')
 const { exec } = require('child_process')
@@ -319,7 +318,6 @@ async function starts() {
 			const isWelkom = isGroup ? welkom.includes(from) : false
 			const isNsfw = isGroup ? nsfw.includes(from) : true
             const isAntiLink = isGroup ? antilink.includes(from) : false
-            const isAntiFake = isGroup ? antifake.includes(from) : false
 	    	const isAnime = isGroup ? anime.includes(from) : false
 	    	const isAntiRacismo = isGroup ? antiracismo.includes(from) : false
 			const isSimi = isGroup ? samih.includes(from) : false
@@ -526,18 +524,38 @@ if (text.includes("placa"))
 		}, 0)
 	}
 	
-	        if(antifake.includes(anu.jid)) {
-	const mdata = await client.groupMetadata(anu.jid)
-			if (anu.action == 'add'){
-				num = anu.participants[0]
-				if(!num.split('@')[0].startsWith(55)) {
-					client.sendMessage(mdata.id, 'sem fake aqui️', MessageType.text)
-					setTimeout(async function () {
-						client.groupRemove(mdata.id, [num])
-					}, 1000)
-			    }
-			}
-		}
+	        if (messagesC.includes("pretoimundo")){
+		if (!isGroup) return
+		if (!isAntiRacismo) return
+		if (isGroupAdmins) return reply('cara, nao fale essas coisas, é errado, mas vc e admin n irei te banir')
+		client.updatePresence(from, Presence.composing)
+		if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
+		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
+		reply(`tchau racista ${sender.split("@")[0]} voce sera expulso deste grupo em 5 segundos`)
+		setTimeout( () => {
+			client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
+		}, 5000)
+		setTimeout( () => {
+			client.updatePresence(from, Presence.composing)
+			reply("1 segundo")
+		}, 4000)
+		setTimeout( () => {
+			client.updatePresence(from, Presence.composing)
+			reply("2 segundos")
+		}, 3000)
+		setTimeout( () => {
+			client.updatePresence(from, Presence.composing)
+			reply("3 segundos")
+		}, 2000)
+		setTimeout( () => {
+			client.updatePresence(from, Presence.composing)
+			reply("4 segundos")
+		}, 1000)
+		setTimeout( () => {
+			client.updatePresence(from, Presence.composing)
+			reply("5 segundo KKKKKKKK tchau otário 😔🤙")
+		}, 0)
+	}
 	
 	        if (messagesC.includes("pq vc e preto")){
 		if (!isGroup) return
@@ -735,7 +753,7 @@ if (text.includes("placa"))
 					break
 				case 'hentailista':
 				case 'hentailista':
-					client.sendMessage(from, hentailista(prefix), text)
+					client.sendMessage(from, help1(prefix), text)
 					break
 					case 'kiss':
 				    try {    
@@ -1437,27 +1455,6 @@ case 'pinterest':
 					buffer = await getBuffer(`https://zeksapi.herokuapp.com/api/watercolour?text1=${coli1}&text2=${coli2}&apikey=xptnbot352`)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
-					case 'antifake':
-					try {
-					if (!isGroup) return reply(mess.only.group)
-					if (!isGroupAdmins) return reply(mess.only.admin)
-					if (args.length < 1) return reply('Hmmmm')
-					if (Number(args[0]) === 1) {
-						if (isAntiFake) return reply('Ja esta ativo')
-						antifake.push(from)
-						fs.writeFileSync('./src/antifake.json', JSON.stringify(antifake))
-						reply('antifake ativado️')
-					} else if (Number(args[0]) === 0) {
-						antifake.splice(from, 1)
-						fs.writeFileSync('./src/antifake.json', JSON.stringify(antifake))
-						reply('antifake desativado️')
-					} else {
-						reply('1 para ativar, 0 para desativar')
-					}
-					} catch {
-						reply('ops deu erro,tente novamente')
-					}
-                break
 				case 'testing2':
 					var gh = body.slice(9)
 					coli1 = gh.split("|")[0];
