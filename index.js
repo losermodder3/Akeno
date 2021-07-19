@@ -768,7 +768,7 @@ if (text.includes("placa"))
 					break
 				case 'hentailista':
 				case 'hentailista':
-					client.sendMessage(from, help1(prefix), text)
+					client.sendMessage(from, hentailista(prefix), text)
 					break
 					case 'kiss':
 				    try {    
