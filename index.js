@@ -4160,7 +4160,7 @@ break
 					reply('Excluido todos os chats com sucesso :)')
 					break
 				case 'bc':
-					if (!isOwner) return reply('Quem é Você, você não é meu dono 😂?')
+					if (!isOwner) return reply('somente o loser pode')
 					if (args.length < 1) return reply('.......')
 					anu = await client.chats.all()
 					if (isMedia && !mek.message.videoMessage || isQuotedImage) {
@@ -4169,12 +4169,12 @@ break
 						for (let _ of anu) {
 							client.sendMessage(_.jid, buff, image, {caption: `[ TRANSMIÇÃO DE AVISO ]\n\n${body.slice(4)}`})
 						}
-						reply('Transmissão enviada com sucesso')
+						reply('Ja mandei senpai')
 					} else {
 						for (let _ of anu) {
 							sendMess(_.jid, `[ TRANSMISSÃO DE AVISO ]\n\n${body.slice(4)}`)
 						}
-						reply('Transmissão enviada com sucesso')
+						reply('mandei com sucesso')
 					}
 					break
         case 'promover':
