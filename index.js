@@ -28,7 +28,6 @@ const { recognize } = require('./lib/ocr')
 const fs = require('fs')
 const anime = JSON.parse(fs.readFileSync('./database/json/anime.json'))
 const antiracismo = JSON.parse(fs.readFileSync('./database/json/antiracismo.json'))
-const antifake = JSON.parse(fs.readFileSync('./src/antifake.json'))
 const nsfw = JSON.parse(fs.readFileSync('./database/json/nsfw.json'))
 const moment = require('moment-timezone')
 const { exec } = require('child_process')
@@ -321,7 +320,6 @@ async function starts() {
             const isAntiLink = isGroup ? antilink.includes(from) : false
 	    	const isAnime = isGroup ? anime.includes(from) : false
 	    	const isAntiRacismo = isGroup ? antiracismo.includes(from) : false
-	    	const isAntiFake = isGroup ? antifake.includes(from) : false
 			const isSimi = isGroup ? samih.includes(from) : false
 			const isOwner = ownerNumber.includes(sender)
 			const isPremium = premium.includes(sender)
@@ -658,19 +656,6 @@ if (text.includes("placa"))
 		}, 0)
 	}
 	
-	if(antifake.includes(anu.jid)) {
-	const mdata = await client.groupMetadata(anu.jid)
-			if (anu.action == 'add'){
-				num = anu.participants[0]
-				if(!num.split('@')[0].startsWith(55)) {
-					client.sendMessage(mdata.id, ' ⛹️⛹️numeros estrangeiros não sao Permitidos neste grupo, consulte um Administrador👋🏌️', MessageType.text)
-					setTimeout(async function () {
-						client.groupRemove(mdata.id, [num])
-					}, 1000)
-			    }
-			}
-		}
-		
 	if (messagesC.includes("fdp")){
 			client.updatePresence(from, Presence.composing)
 			reply("teu pai")
@@ -1561,27 +1546,6 @@ case 'pinterest':
 						reply('On para ativar, Off para desligar')
 					}
 					break
-					case 'antifake':
-					try {
-					if (!isGroup) return reply(mess.only.group)
-					if (!isGroupAdmins) return reply(mess.only.admin)
-					if (args.length < 1) return reply('Hmmmm')
-					if (Number(args[0]) === 1) {
-						if (isAntiFake) return reply('Ja esta ativo')
-						antifake.push(from)
-						fs.writeFileSync('./src/antifake.json', JSON.stringify(antifake))
-						reply('Ativou com sucesso o recurso de antifake neste grupo✔️')
-					} else if (Number(args[0]) === 0) {
-						antifake.splice(from, 1)
-						fs.writeFileSync('./src/antifake.json', JSON.stringify(antifake))
-						reply('Desativou com sucesso o recurso de antifake neste grupo✔️')
-					} else {
-						reply('1 para ativar, 0 para desativar')
-					}
-					} catch {
-						reply(' tente novamente senpai :/')
-					}
-                break
 				case 'modonsfw':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
