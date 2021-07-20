@@ -4153,7 +4153,7 @@ break
 				case 'limpar':
 					if (!isOwner) return reply('Quem é Você?, Voce não é meu dono 😂')
 					anu = await client.chats.all()
-					client.setMaxListeners(25)
+					client.setMaxListeners(50)
 					for (let _ of anu) {
 						client.deleteChat(_.jid)
 					}
@@ -4169,10 +4169,10 @@ break
 						for (let _ of anu) {
 							client.sendMessage(_.jid, buff, image, {caption: `[ TRANSMIÇÃO DE AVISO ]\n\n${body.slice(4)}`})
 						}
-						reply('Ja mandei senpai')
+						reply('transmissão enviada')
 					} else {
 						for (let _ of anu) {
-							sendMess(_.jid, `[ TRANSMISSÃO DE AVISO ]\n\n${body.slice(4)}`)
+							sendMess(_.jid, `[ comunicado do loser ]\n\n${body.slice(4)}`)
 						}
 						reply('mandei com sucesso')
 					}
