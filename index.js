@@ -99,13 +99,14 @@ const getLevelingXp = (userId) => {
 			if (anu.action == 'add'){
 				num = anu.participants[0]
 				if(!num.split('@')[0].startsWith(55)) {
-					client.sendMessage(mdata.id, ' ⛹️⛹️numeros estrangeiros não sao Permitidos neste grupo, consulte um Administrador👋🏌️', MessageType.text)
+					client.sendMessage(mdata.id, ' ora ora,não pode numero fake', MessageType.text)
 					setTimeout(async function () {
 						client.groupRemove(mdata.id, [num])
 					}, 1000)
 			    }
 			}
 		}
+		
             if (position !== false) {
                 return _level[position].level
             }
@@ -647,28 +648,28 @@ if (text.includes("placa"))
 		reply(`link detectado ${sender.split("@")[0]} voce sera expulso deste grupo em 5 segundos`)
 		setTimeout( () => {
 			client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
+		}, 5000)
+		setTimeout( () => {
+			client.updatePresence(from, Presence.composing)
+			reply("1 segundo")
+		}, 4000)
+		setTimeout( () => {
+			client.updatePresence(from, Presence.composing)
+			reply("2 segundos")
+		}, 3000)
+		setTimeout( () => {
+			client.updatePresence(from, Presence.composing)
+			reply("3 segundos")
+		}, 2000)
+		setTimeout( () => {
+			client.updatePresence(from, Presence.composing)
+			reply("4 segundos")
 		}, 1000)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply(")
-		}, 1000)
-		setTimeout( () => {
-			client.updatePresence(from, Presence.composing)
-			reply("")
-		}, 1000)
-		setTimeout( () => {
-			client.updatePresence(from, Presence.composing)
-			reply("")
-		},  1000)
-		setTimeout( () => {
-			client.updatePresence(from, Presence.composing)
-			reply("")
-		}, 1000)
-		setTimeout( () => {
-			client.updatePresence(from, Presence.composing)
-			reply("")
+			reply("5 segundo KKKKKKKK tchau otário 😔🤙")
 		}, 0)
-	} 
+	}
 	
 	if (messagesC.includes("fdp")){
 			client.updatePresence(from, Presence.composing)
@@ -709,13 +710,13 @@ if (text.includes("placa"))
 				if (messagesC.includes("welcome")){
 			client.updatePresence(from, Presence.composing)
 			tujuh = fs.readFileSync('./assets/jack.mp4');
-            client.sendMessage(from, tujuh, MessageType.video, {quoted: mek, mimetype: 'mp4', ptt:true})
+            client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'mp4', ptt:true})
 	}
 	
 				if (messagesC.includes("juggenautdrive")){
 			client.updatePresence(from, Presence.composing)
 			tujuh = fs.readFileSync('./assets/Juggenautdrive.mp4');
-            client.sendMessage(from, tujuh, MessageType.video, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+            client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 	        if (messagesC.includes("sexo")){
 			client.updatePresence(from, Presence.composing)
@@ -784,7 +785,7 @@ if (text.includes("placa"))
 					break
 case  'rename':
 
-		    		if (!isQuotedSticker) return reply('Apenas figuriha senpai')
+		    		if (!isQuotedSticker) return reply('Apenas figurinha senpai')
 		            encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 				    media = await client.downloadAndSaveMediaMessage(encmedia)
 		            anu = args.join(' ').split('|')
@@ -1284,10 +1285,8 @@ case 'pinterest':
 					pok = await getBuffer(nimek)
 					client.sendMessage(from, pok, image, { quoted: mek, caption: `*PINTEREST*`})			
 					break
-                 case 'hentai2': 
-                 if (isGroupAdmins) return 
-                 if (!isnsfw) returnreply('ative o modo nsfw')
-                 data = fs.readFileSync('./src/hentai1.js');
+                 case 'hentai2':
+				 data = fs.readFileSync('./src/hentai1.js');
                  jsonData = JSON.parse(data);
                  randIndex = Math.floor(Math.random() * jsonData.length);
                  randKey = jsonData[randIndex];
@@ -4080,6 +4079,23 @@ break
 						reply('Possível nome de usuário inválido')
 					}
 					break
+                    case 'modonsfw':
+					if (!isGroup) return reply(mess.only.group)
+					if (!isGroupAdmins) return reply(mess.only.admin)
+					if (args.length < 1) return reply('Hmmmm')
+					if ((args[0]) === 'on') {
+						if (isNsfw) return reply('O modo nsfw já está ativo')
+						nsfw.push(from)
+						fs.writeFileSync('./database/json/nsfw.json', JSON.stringify(nsfw))
+						reply(`\`\`\`✓Ativado com sucesso o modo nsfw no grupo\`\`\` *${groupMetadata.subject}*`)
+					} else if ((args[0]) === 'off') {
+						nsfw.splice(from, 1)
+						fs.writeFileSync('./database/json/nsfw.json', JSON.stringify(nsfw))
+						reply(`\`\`\`✓Modo nsfw desativado com sucesso no grupo\`\`\` *${groupMetadata.subject}*`)
+					} else {
+						reply('On para ativar, Off para desligar')
+					}
+					break
 				case 'nulis':
 				case 'tulis':
 				  client.updatePresence(from, Presence.composing)
@@ -4171,7 +4187,7 @@ break
 						for (let _ of anu) {
 							client.sendMessage(_.jid, buff, image, {caption: `[ TRANSMIÇÃO DE AVISO ]\n\n${body.slice(4)}`})
 						}
-						reply('mandei pra vc loser')
+						reply('transmissão enviada')
 					} else {
 						for (let _ of anu) {
 							sendMess(_.jid, `[ comunicado do loser ]\n\n${body.slice(4)}`)
@@ -4231,7 +4247,7 @@ break
 					break
 				case 'banir':
 					if (!isGroup) return reply(mess.only.group)
-					if (!isGroupAdmins) return reply(mess.only.admin)
+					if (!isOwner) return reply(mess.only.Owner)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('A marca-alvo que você quer chutar!')
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
