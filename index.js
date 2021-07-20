@@ -647,28 +647,28 @@ if (text.includes("placa"))
 		reply(`link detectado ${sender.split("@")[0]} voce sera expulso deste grupo em 5 segundos`)
 		setTimeout( () => {
 			client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
-		}, 5000)
-		setTimeout( () => {
-			client.updatePresence(from, Presence.composing)
-			reply("1 segundo")
-		}, 4000)
-		setTimeout( () => {
-			client.updatePresence(from, Presence.composing)
-			reply("2 segundos")
-		}, 3000)
-		setTimeout( () => {
-			client.updatePresence(from, Presence.composing)
-			reply("3 segundos")
-		}, 2000)
-		setTimeout( () => {
-			client.updatePresence(from, Presence.composing)
-			reply("4 segundos")
 		}, 1000)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("5 segundo KKKKKKKK tchau otário 😔🤙")
+			reply(")
+		}, 1000)
+		setTimeout( () => {
+			client.updatePresence(from, Presence.composing)
+			reply("")
+		}, 1000)
+		setTimeout( () => {
+			client.updatePresence(from, Presence.composing)
+			reply("")
+		},  1000)
+		setTimeout( () => {
+			client.updatePresence(from, Presence.composing)
+			reply("")
+		}, 1000)
+		setTimeout( () => {
+			client.updatePresence(from, Presence.composing)
+			reply("")
 		}, 0)
-	}
+	} 
 	
 	if (messagesC.includes("fdp")){
 			client.updatePresence(from, Presence.composing)
@@ -709,13 +709,13 @@ if (text.includes("placa"))
 				if (messagesC.includes("welcome")){
 			client.updatePresence(from, Presence.composing)
 			tujuh = fs.readFileSync('./assets/jack.mp4');
-            client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'mp4', ptt:true})
+            client.sendMessage(from, tujuh, MessageType.video, {quoted: mek, mimetype: 'mp4', ptt:true})
 	}
 	
 				if (messagesC.includes("juggenautdrive")){
 			client.updatePresence(from, Presence.composing)
 			tujuh = fs.readFileSync('./assets/Juggenautdrive.mp4');
-            client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+            client.sendMessage(from, tujuh, MessageType.video, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 	        if (messagesC.includes("sexo")){
 			client.updatePresence(from, Presence.composing)
@@ -1284,8 +1284,10 @@ case 'pinterest':
 					pok = await getBuffer(nimek)
 					client.sendMessage(from, pok, image, { quoted: mek, caption: `*PINTEREST*`})			
 					break
-                 case 'hentai2':
-				 data = fs.readFileSync('./src/hentai1.js');
+                 case 'hentai2': 
+                 if (isGroupAdmins) return 
+                 if (!isnsfw) returnreply('ative o modo nsfw')
+                 data = fs.readFileSync('./src/hentai1.js');
                  jsonData = JSON.parse(data);
                  randIndex = Math.floor(Math.random() * jsonData.length);
                  randKey = jsonData[randIndex];
@@ -4169,7 +4171,7 @@ break
 						for (let _ of anu) {
 							client.sendMessage(_.jid, buff, image, {caption: `[ TRANSMIÇÃO DE AVISO ]\n\n${body.slice(4)}`})
 						}
-						reply('transmissão enviada')
+						reply('mandei pra vc loser')
 					} else {
 						for (let _ of anu) {
 							sendMess(_.jid, `[ comunicado do loser ]\n\n${body.slice(4)}`)
