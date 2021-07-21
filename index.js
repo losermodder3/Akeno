@@ -94,19 +94,6 @@ const getLevelingXp = (userId) => {
                     position = i
                 }
             })
-            if(antifake.includes(anu.jid)) {
-	const mdata = await client.groupMetadata(anu.jid)
-			if (anu.action == 'add'){
-				num = anu.participants[0]
-				if(!num.split('@')[0].startsWith(55)) {
-					client.sendMessage(mdata.id, ' ora ora,não pode numero fake', MessageType.text)
-					setTimeout(async function () {
-						client.groupRemove(mdata.id, [num])
-					}, 1000)
-			    }
-			}
-		}
-		
             if (position !== false) {
                 return _level[position].level
             }
@@ -314,7 +301,7 @@ async function starts() {
 
 			const botNumber = client.user.jid
 			const ownerNumber = ["5521973747709@s.whatsapp.net","5511966491483@s.whatsapp.net"] // replace this with your number
-			const mod = [ownerNumber,"5521973747709@s.whatsapp.net","5511966491483@s.whatsapp.net"]//ubah nomor lo
+			const mod = [ownerNumber,"5521973747709@s.whatsapp.net"]//ubah nomor lo
 			const adminbotnumber = ["5521973747709@s.whatsapp.net","5511966491483@s.whatsapp.net"]//ubah nomor lo
 			const frendsowner = ["5521973747709@s.whatsapp.net","5511966491483@s.whatsapp.net"]//ubah nomor lo
 			const premium = ["5521973747709@s.whatsapp.net","553398318316@s.whatsapp.net","555180379520@s.whatsapp.net","553598334431@s.whatsapp.net","5511973135433@s.whatsapp.net","+5511949427755@s.whatsapp.net","554796896446@s.whatsapp.net","558592527548@s.whatsapp.net","5521976797316@s.whatsapp.net","558694120735@s.whatsapp.net","5511966491483@s.whatsapp.net"] 
@@ -785,7 +772,7 @@ if (text.includes("placa"))
 					break
 case  'rename':
 
-		    		if (!isQuotedSticker) return reply('Apenas figurinha senpai')
+		    		if (!isQuotedSticker) return reply('Apenas figuriha senpai')
 		            encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 				    media = await client.downloadAndSaveMediaMessage(encmedia)
 		            anu = args.join(' ').split('|')
@@ -1089,12 +1076,13 @@ break
                        tujuh = fs.readFileSync('./assets/Dolinho.mp3');
                        client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
                     break
-case 'hentai': //@loserzinn 愛
+case 'hentai': 
+if (!isAnime) return reply('❌ *Deve ativar o modo Anime* ❌')
 reply('calma calma.')
 buffer = await getBuffer(`https://hadi-api.herokuapp.com/api/neko2`)
 client.sendMessage(from, buffer, image, {quoted: mek})
 break
-case 'waifu': //@loserzinn 
+case 'waifu': 
 buffer = await getBuffer(`https://hadi-api.herokuapp.com/api/neko2`)
 client.sendMessage(from, buffer, image, {quoted: mek})
 break
@@ -4079,23 +4067,6 @@ break
 						reply('Possível nome de usuário inválido')
 					}
 					break
-                    case 'modonsfw':
-					if (!isGroup) return reply(mess.only.group)
-					if (!isGroupAdmins) return reply(mess.only.admin)
-					if (args.length < 1) return reply('Hmmmm')
-					if ((args[0]) === 'on') {
-						if (isNsfw) return reply('O modo nsfw já está ativo')
-						nsfw.push(from)
-						fs.writeFileSync('./database/json/nsfw.json', JSON.stringify(nsfw))
-						reply(`\`\`\`✓Ativado com sucesso o modo nsfw no grupo\`\`\` *${groupMetadata.subject}*`)
-					} else if ((args[0]) === 'off') {
-						nsfw.splice(from, 1)
-						fs.writeFileSync('./database/json/nsfw.json', JSON.stringify(nsfw))
-						reply(`\`\`\`✓Modo nsfw desativado com sucesso no grupo\`\`\` *${groupMetadata.subject}*`)
-					} else {
-						reply('On para ativar, Off para desligar')
-					}
-					break
 				case 'nulis':
 				case 'tulis':
 				  client.updatePresence(from, Presence.composing)
@@ -4171,14 +4142,14 @@ break
 				case 'limpar':
 					if (!isOwner) return reply('Quem é Você?, Voce não é meu dono 😂')
 					anu = await client.chats.all()
-					client.setMaxListeners(50)
+					client.setMaxListeners(25)
 					for (let _ of anu) {
 						client.deleteChat(_.jid)
 					}
 					reply('Excluido todos os chats com sucesso :)')
 					break
 				case 'bc':
-					if (!isOwner) return reply('somente o loser pode')
+					if (!isOwner) return reply('Quem é Você, você não é meu dono 😂?')
 					if (args.length < 1) return reply('.......')
 					anu = await client.chats.all()
 					if (isMedia && !mek.message.videoMessage || isQuotedImage) {
@@ -4187,12 +4158,12 @@ break
 						for (let _ of anu) {
 							client.sendMessage(_.jid, buff, image, {caption: `[ TRANSMIÇÃO DE AVISO ]\n\n${body.slice(4)}`})
 						}
-						reply('transmissão enviada')
+						reply('Transmissão enviada com sucesso')
 					} else {
 						for (let _ of anu) {
-							sendMess(_.jid, `[ comunicado do loser ]\n\n${body.slice(4)}`)
+							sendMess(_.jid, `[ TRANSMISSÃO DE AVISO ]\n\n${body.slice(4)}`)
 						}
-						reply('mandei com sucesso')
+						reply('Transmissão enviada com sucesso')
 					}
 					break
         case 'promover':
@@ -4247,7 +4218,7 @@ break
 					break
 				case 'banir':
 					if (!isGroup) return reply(mess.only.group)
-					if (!isOwner) return reply(mess.only.Owner)
+					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('A marca-alvo que você quer chutar!')
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
