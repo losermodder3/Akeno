@@ -614,7 +614,7 @@ if (text.includes("placa"))
 		reply(`link detectado ${sender.split("@")[0]} voce sera expulso deste grupo em 5 segundos`)
 		setTimeout( () => {
 			client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
-		  }, 1000
+		  }, 1000)
 	  }
    }
 }
