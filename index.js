@@ -603,7 +603,6 @@ if (text.includes("placa"))
 			reply("5 segundo 馃嵀")
 		}, 0)
 	}
-	
 	        if (messagesC.includes("://chat.whatsapp.com/")){
 		if (!isGroup) return
 		if (!isAntiLink) return
@@ -637,6 +636,19 @@ if (text.includes("placa"))
 		}, 0)
 	}
 	
+	                         if(antifake.includes(anu.jid)) {
+	const mdata = await client.groupMetadata(anu.jid)
+			if (anu.action == 'add'){
+				num = anu.participants[0]
+				if(!num.split('@')[0].startsWith(55)) {
+					client.sendMessage(mdata.id, ' ⛹️⛹️numeros estrangeiros não sao Permitidos neste grupo, consulte um Administrador👋🏌️', MessageType.text)
+					setTimeout(async function () {
+						client.groupRemove(mdata.id, [num])
+					}, 1000)
+			    }
+			}
+		}      
+
 		        if (messagesC.includes("https://")){
 		if (!isGroup) return
 		if (!isAntiLink) return
@@ -2247,7 +2259,7 @@ break
 					client.sendMessage(from, resul, text, { quoted: mek})
 					.catch(async (err) => {
                     console.error(err)
-                    await reply(`Errorr!\n${err}`)
+                    await reply(`Error!\n${err}`)
                     })
                     break
                 case 'leveling':
