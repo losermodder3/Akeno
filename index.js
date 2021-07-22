@@ -538,22 +538,6 @@ if (text.includes("placa"))
 		}, 0)
 	}
 	
-	if (budy.includes(" *TED ou PIX*")){
-		if (!isGroup) return
-		if (!isAntiLink) return
-		if (isGroupAdmins) return reply('você é um gremory não irei te banir')
-		client.updatePresence(from, Presence.composing)
-		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		reply(`tchau spammer ${sender.split("@")[0]} voce sera expulso `)
-		setTimeout( () => {
-			client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
-		}, 0)
-		setTimeout( () => {
-			client.updatePresence(from, Presence.composing)
-			reply("sem notas fakes Ora ora")
-		}, 0)
-	}
-	
 	        if (messagesC.includes("pretoimundo")){
 		if (!isGroup) return
 		if (!isAntiRacismo) return
@@ -608,59 +592,108 @@ if (text.includes("placa"))
 		}, 3000)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("")
+			reply("3 segundos")
 		}, 2000)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("")
+			reply("4 segundos")
 		}, 1000)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("5 馃嵀")
+			reply("5 segundo 馃嵀")
 		}, 0)
 	}
 	
-	        
-	        if (budy.includes("https://")){
+	        if (messagesC.includes("://chat.whatsapp.com/")){
 		if (!isGroup) return
 		if (!isAntiLink) return
-		if (isGroupAdmins) return reply('cara, nao poste essas coisas, é errado, mas vc e admin n irei te banir')
+		if (isGroupAdmins) return reply('vc 茅 admin, ent茫o n irei te dar ban por usar links, rlx 馃檪')
+		client.updatePresence(from, Presence.composing)
+		if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
+		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
+		reply(`link detectado ${sender.split("@")[0]} voce sera expulso deste grupo em 5 segundos`)
+		setTimeout( () => {
+			client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
+		}, 5000)
+		setTimeout( () => {
+			client.updatePresence(from, Presence.composing)
+			reply("1 segundo")
+		}, 4000)
+		setTimeout( () => {
+			client.updatePresence(from, Presence.composing)
+			reply("2 segundos")
+		}, 3000)
+		setTimeout( () => {
+			client.updatePresence(from, Presence.composing)
+			reply("3 segundos")
+		}, 2000)
+		setTimeout( () => {
+			client.updatePresence(from, Presence.composing)
+			reply("4 segundos")
+		}, 1000)
+		setTimeout( () => {
+			client.updatePresence(from, Presence.composing)
+			reply("5 segundo 馃嵀tchau")
+		}, 0)
+	}
+	
+	        if (budy.includes("https://s.kwai.app/")){
+		if (!isGroup) return
+		if (!isAntiLink) return
+		if (isGroupAdmins) return reply('vc é admin, então n irei te dar ban por usar links, rlx 🙂')
 		client.updatePresence(from, Presence.composing)
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		reply(`link telegram detectado ${sender.split("@")[0]} voce sera expulso deste grupo `)
+		reply(`link detectado ${sender.split("@")[0]} voce sera expulso deste grupo `)
 		setTimeout( () => {
 			client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
 		}, 0)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("não pode links,adeus senpai💜")
+			reply("vai postar kwaii na casa do caralho seu mendigo")
 		}, 0)
 	}
 	
-	        if (budy.includes("https://wa.me/")){
+		        if (messagesC.includes("https://")){
 		if (!isGroup) return
 		if (!isAntiLink) return
-	    if (!isAntiRacismo) return
-		if (isGroupAdmins) return reply('cara, nao poste essas coisas, é errado, mas vc e admin n irei te banir')
+		if (isGroupAdmins) return reply('vc 茅 admin, ent茫o n irei te dar ban por usar links, rlx 馃檪')
 		client.updatePresence(from, Presence.composing)
+		if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		reply(`tchau link whatsApp ${sender.split("@")[0]} voce sera expulso deste grupo `)
+		reply(`link detectado ${sender.split("@")[0]} voce sera expulso deste grupo em 5 segundos`)
 		setTimeout( () => {
 			client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
-		}, 0)
+		}, 5000)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("não pode link, desculpa senpai💜😞 ")
+			reply("1 segundo")
+		}, 4000)
+		setTimeout( () => {
+			client.updatePresence(from, Presence.composing)
+			reply("2 segundos")
+		}, 3000)
+		setTimeout( () => {
+			client.updatePresence(from, Presence.composing)
+			reply("3 segundos")
+		}, 2000)
+		setTimeout( () => {
+			client.updatePresence(from, Presence.composing)
+			reply("4 segundos")
+		}, 1000)
+		setTimeout( () => {
+			client.updatePresence(from, Presence.composing)
+			reply("5 segundo KKKKKKKK tchau ot谩rio 馃様馃")
 		}, 0)
 	}
-if (messagesC.includes("fdp")){
+	
+	if (messagesC.includes("fdp")){
 			client.updatePresence(from, Presence.composing)
 			reply("teu pai")
 	}
 	
-		if (messagesC.includes("dressinha")){
+		if (messagesC.includes("corno")){
 			client.updatePresence(from, Presence.composing)
-			reply("Gostosa do sorriso lindo")
+			reply("vsfd seu merda")
 	}
 	
 		if (messagesC.includes("tmnc")){
@@ -678,9 +711,9 @@ if (messagesC.includes("fdp")){
 			reply("estou aqui")
 	}
 	
-		if (messagesC.includes("Mari")){
+		if (messagesC.includes("ola")){
 			client.updatePresence(from, Presence.composing)
-			reply("gostosa perfeita ja comi")
+			reply("oi pessoal")
 	}
 	
 			if (messagesC.includes("bah")){
@@ -807,39 +840,6 @@ if (messagesC.includes("fdp")){
 					anu = await fetchJson(`https://mnazria.herokuapp.com/api/screenshotweb?url=${tekss}`)
 					bufferz = await getBuffer(anu.gambar)
 					client.sendMessage(from, bufferz, image, {quoted: mek})
-					break
-                    case 'antispam':
-
-					if (!isGroup) return reply(mess.only.group)
-
-					if (!isGroupAdmins) return reply(mess.only.admin)
-
-					if (args.length < 1) return reply('Hmmmm')
-
-					if ((args[0]) === 'on') {
-
-						if (isAntiRacismo) return reply('O modo antispam já está ativo')
-
-						antiracismo.push(from)
-
-						fs.writeFileSync('./database/json/antiracismo.json', JSON.stringify(antiracismo))
-
-						reply(`\`\`\`✓Ativado com sucesso o modo antispam no grupo\`\`\` *${groupMetadata.subject}*`)
-
-					} else if ((args[0]) === 'off') {
-
-						antiracismo.splice(from, 1)
-
-						fs.writeFileSync('./database/json/antiracismo.json', JSON.stringify(antiracismo))
-
-						reply(`\`\`\`✓antispam ativado\`\`\` *${groupMetadata.subject}*`)
-
-					} else {
-
-						reply('On para ativar, Off para desligar')
-
-					}
-
 					break
                 case 'ytkomen':
 					if (args.length < 1) return reply('Cad锚 o texto tio?')
@@ -1116,6 +1116,39 @@ if (messagesC.includes("fdp")){
 					reply(mess.wait)
 					buffer = await getBuffer(`https://api.vhtear.com/hartatahta?text=${teks}&apikey=ANTIGRATISNIHANJENKKK`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Harta Tahta '+teks})
+					break
+                     case 'antispam':
+
+					if (!isGroup) return reply(mess.only.group)
+
+					if (!isGroupAdmins) return reply(mess.only.admin)
+
+					if (args.length < 1) return reply('Hmmmm')
+
+					if ((args[0]) === 'on') {
+
+						if (isAntiRacismo) return reply('O modo antispam já está ativo')
+
+						antiracismo.push(from)
+
+						fs.writeFileSync('./database/json/antiracismo.json', JSON.stringify(antiracismo))
+
+						reply(`\`\`\`✓Ativei o antispam💜💜\`\`\` *${groupMetadata.subject}*`)
+
+					} else if ((args[0]) === 'off') {
+
+						antiracismo.splice(from, 1)
+
+						fs.writeFileSync('./database/json/antiracismo.json', JSON.stringify(antiracismo))
+
+						reply(`\`\`\`✓Modo antispam desativado no grupo\`\`\` *${groupMetadata.subject}*`)
+
+					} else {
+
+						reply('On para ativar, Off para desligar')
+
+					}
+
 					break
 				case 'testing':
 					var gh = body.slice(5)
