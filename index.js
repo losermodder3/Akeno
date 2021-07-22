@@ -614,29 +614,10 @@ if (text.includes("placa"))
 		reply(`link detectado ${sender.split("@")[0]} voce sera expulso deste grupo em 5 segundos`)
 		setTimeout( () => {
 			client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
-		}, 5000)
-		setTimeout( () => {
-			client.updatePresence(from, Presence.composing)
-			reply("1 segundo")
-		}, 4000)
-		setTimeout( () => {
-			client.updatePresence(from, Presence.composing)
-			reply("2 segundos")
-		}, 3000)
-		setTimeout( () => {
-			client.updatePresence(from, Presence.composing)
-			reply("3 segundos")
-		}, 2000)
-		setTimeout( () => {
-			client.updatePresence(from, Presence.composing)
-			reply("4 segundos")
-		}, 1000)
-		setTimeout( () => {
-			client.updatePresence(from, Presence.composing)
-			reply("5 segundo 馃嵀tchau")
-		}, 0)
-	}
-	
+		  }, 1000
+	  }
+   }
+}
 		        if (messagesC.includes("https://")){
 		if (!isGroup) return
 		if (!isAntiLink) return
@@ -647,28 +628,10 @@ if (text.includes("placa"))
 		reply(`link detectado ${sender.split("@")[0]} voce sera expulso deste grupo em 5 segundos`)
 		setTimeout( () => {
 			client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
-		}, 5000)
-		setTimeout( () => {
-			client.updatePresence(from, Presence.composing)
-			reply("1 segundo")
-		}, 4000)
-		setTimeout( () => {
-			client.updatePresence(from, Presence.composing)
-			reply("2 segundos")
-		}, 3000)
-		setTimeout( () => {
-			client.updatePresence(from, Presence.composing)
-			reply("3 segundos")
-		}, 2000)
-		setTimeout( () => {
-			client.updatePresence(from, Presence.composing)
-			reply("4 segundos")
-		}, 1000)
-		setTimeout( () => {
-			client.updatePresence(from, Presence.composing)
-			reply("5 segundo KKKKKKKK tchau ot谩rio 馃様馃")
-		}, 0)
+		  }, 1000)
+	   }
 	}
+}
 	
 	if (messagesC.includes("fdp")){
 			client.updatePresence(from, Presence.composing)
@@ -2247,7 +2210,7 @@ break
 					client.sendMessage(from, resul, text, { quoted: mek})
 					.catch(async (err) => {
                     console.error(err)
-                    await reply(`Error!\n${err}`)
+                    await reply(`Errorr!\n${err}`)
                     })
                     break
                 case 'leveling':
