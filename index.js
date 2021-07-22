@@ -637,22 +637,6 @@ if (text.includes("placa"))
 		}, 0)
 	}
 	
-	        if (budy.includes("https://s.kwai.app/")){
-		if (!isGroup) return
-		if (!isAntiLink) return
-		if (isGroupAdmins) return reply('vc é admin, então n irei te dar ban por usar links, rlx 🙂')
-		client.updatePresence(from, Presence.composing)
-		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		reply(`link detectado ${sender.split("@")[0]} voce sera expulso deste grupo `)
-		setTimeout( () => {
-			client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
-		}, 0)
-		setTimeout( () => {
-			client.updatePresence(from, Presence.composing)
-			reply("vai postar kwaii na casa do caralho seu mendigo")
-		}, 0)
-	}
-	
 		        if (messagesC.includes("https://")){
 		if (!isGroup) return
 		if (!isAntiLink) return
@@ -1116,39 +1100,6 @@ if (text.includes("placa"))
 					reply(mess.wait)
 					buffer = await getBuffer(`https://api.vhtear.com/hartatahta?text=${teks}&apikey=ANTIGRATISNIHANJENKKK`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Harta Tahta '+teks})
-					break
-                     case 'antispam':
-
-					if (!isGroup) return reply(mess.only.group)
-
-					if (!isGroupAdmins) return reply(mess.only.admin)
-
-					if (args.length < 1) return reply('Hmmmm')
-
-					if ((args[0]) === 'on') {
-
-						if (isAntiRacismo) return reply('O modo antispam já está ativo')
-
-						antiracismo.push(from)
-
-						fs.writeFileSync('./database/json/antiracismo.json', JSON.stringify(antiracismo))
-
-						reply(`\`\`\`✓Ativei o antispam💜💜\`\`\` *${groupMetadata.subject}*`)
-
-					} else if ((args[0]) === 'off') {
-
-						antiracismo.splice(from, 1)
-
-						fs.writeFileSync('./database/json/antiracismo.json', JSON.stringify(antiracismo))
-
-						reply(`\`\`\`✓Modo antispam desativado no grupo\`\`\` *${groupMetadata.subject}*`)
-
-					} else {
-
-						reply('On para ativar, Off para desligar')
-
-					}
-
 					break
 				case 'testing':
 					var gh = body.slice(5)
