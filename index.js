@@ -4305,7 +4305,7 @@ break
 
 //COMANDOS PLAY BY @loserzinn 
 case 'play':   
-//@loserzinn 
+//@loserzin 
 				reply(mess.wait)
 				const play = body.slice(5)
 				anu = await fetchJson(`https://api.zeks.xyz/api/ytplaymp3?q=${play}&apikey=apivinz`)
