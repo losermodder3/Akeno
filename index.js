@@ -7,6 +7,7 @@ const {
 } = require('@adiwajshing/baileys')
 const { color, bgcolor } = require('./lib/color')
 const { help } = require('./src/help')
+const {hentailista} = require('./src/hentailista')
 const { modapk } = require('./src/modapk')
 const { pack } = require('./src/pack')
 const { outros } = require('./src/outros')
