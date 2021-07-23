@@ -349,18 +349,7 @@ async function starts() {
             const currentLevel = getLevelingLevel(sender)
             const checkId = getLevelingId(sender)
             try {
-                         if(antifake.includes(anu.jid)) {
-	const mdata = await client.groupMetadata(anu.jid)
-			if (anu.action == 'add'){
-				num = anu.participants[0]
-				if(!num.split('@')[0].startsWith(55)) {
-					client.sendMessage(mdata.id, ' ⛹️⛹️numeros estrangeiros não sao Permitidos neste grupo, consulte um Administrador👋🏌️', MessageType.text)
-					setTimeout(async function () {
-						client.groupRemove(mdata.id, [num])
-					}, 1000)
-			    }
-			}
-		}      
+            
                  if (currentLevel === undefined && checkId === undefined) addLevelingId(sender)
                 const amountXp = Math.floor(Math.random() * 10) + 500
                 const requiredXp = 10000 * (Math.pow(2, currentLevel) - 1)
@@ -4305,7 +4294,7 @@ break
 
 //COMANDOS PLAY BY @loserzinn 
 case 'play':   
-//@loserzin 
+//@loserzinn 
 				reply(mess.wait)
 				const play = body.slice(5)
 				anu = await fetchJson(`https://api.zeks.xyz/api/ytplaymp3?q=${play}&apikey=apivinz`)
