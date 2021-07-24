@@ -71,7 +71,6 @@ const antilink = JSON.parse(fs.readFileSync('./database/json/antilink.json'))
 const event = JSON.parse(fs.readFileSync('./database/json/event.json'))
 const _level = JSON.parse(fs.readFileSync('./database/user/level.json'))
 const _limit = JSON.parse(fs.readFileSync('./database/json/limit.json'))
-const antifake = JSON.parse(fs.readFileSync('./src/antifake.json'))
 /*********** END LOAD ***********/
 
 /********** FUNCTION ***************/
@@ -317,7 +316,6 @@ async function starts() {
 			const isGroupAdmins = groupAdmins.includes(sender) || false
 			const isLevelingOn = isGroup ? _leveling.includes(groupId) : false
 			const isWelkom = isGroup ? welkom.includes(from) : false
-            const isAntiFake = isGroup ? antifake.includes(from) : false
 			const isNsfw = isGroup ? nsfw.includes(from) : true
             const isAntiLink = isGroup ? antilink.includes(from) : false
 	    	const isAnime = isGroup ? anime.includes(from) : false
@@ -2607,27 +2605,6 @@ break
 						reply('1 para ativar, 0 para desativar ')
 					}
 					break
-case 'antifake':
-					try {
-					if (!isGroup) return reply(mess.only.group)
-					if (!isGroupAdmins) return reply(mess.only.admin)
-					if (args.length < 1) return reply('Hmmmm')
-					if (Number(args[0]) === 1) {
-						if (isAntiFake) return reply('Ja esta ativo')
-						antifake.push(from)
-						fs.writeFileSync('./src/antifake.json', JSON.stringify(antifake))
-						reply('Ativou com sucesso o recurso de antifake neste grupo✔️')
-					} else if (Number(args[0]) === 0) {
-						antifake.splice(from, 1)
-						fs.writeFileSync('./src/antifake.json', JSON.stringify(antifake))
-						reply('Desativou com sucesso o recurso de antifake neste grupo✔️')
-					} else {
-						reply('1 para ativar, 0 para desativar')
-					}
-					} catch {
-						reply('Deu erro, tente novamente :/')
-					}
-                break
 				case 'cgame':
 
 					reply(mess.wait)
