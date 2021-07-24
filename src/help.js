@@ -7,9 +7,9 @@ const help = (prefix) => {
 ┌─────────🍭────────
 ╠ 🍭INFO🍭
 ╠🍭 *NOME: Akeno himejima
-╠🍭 *Idade*:18 anos
-╠🍭 *Raça*:Demônio reencarnando /Anjo Caido
-╠🍭 *aniversário*: 21 de julho
+╠🍭 *Idade:18 anos*
+╠🍭 *Raça:Demônio reencarnando /Anjo Caido*
+╠🍭 *aniversário: 21 de julho*
 ╠🍭 𝐒𝐓𝐀𝐓𝐔𝐒: ON
 ║
 ╠══♤〘 MENU 〙♤══
