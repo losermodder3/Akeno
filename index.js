@@ -1232,6 +1232,7 @@ url = encodeURI(`http://brizas-api.herokuapp.com/ttp/attp5?apikey=brizaloka&text
 send = await getBuffer(url)
 client.sendMessage(from, send, sticker, {quoted: mek})
 			     	break
+     
 case 'attp6':	//@loserzinn
 if (args.length < 1) return reply(`_Coloque o texto _\n\n*Exemplo ${prefix}sttc loserzinn*`)
 teks = body.slice(6)
@@ -1262,6 +1263,41 @@ case 'wikipedia':
 	teks = ` ${send.result.result}`
 	client.sendMessage(from, teks, text, {quoted: mek})
 	break
+          case '☻':
+case 'brotei':
+  
+  if (!isRegister) return reply(mess.only.daftarB)
+
+buf = fs.readFileSync(`./Gremory/audio2/Pa.mp4`)
+
+Pin.sendMessage(from, buf, video, {
+
+  mimetype: 'video/mp4', quoted: mek, ptt: true
+
+})
+
+case 'jogar':
+case 'brotei':
+buf = fs.readFileSync(`./angelo/audio2/jogar.mp4`)
+
+client.sendMessage(from, buf, video, {
+
+  mimetype: 'video/mp4', quoted: mek, ptt: true
+
+})
+
+break
+case 'juggenaut':
+case 'brotei':
+buf = fs.readFileSync(`./angelo/audio2/juggenaut.mp4`)
+
+client.sendMessage(from, buf, video, {
+
+  mimetype: 'video/mp4', quoted: mek, ptt: true
+
+})
+
+break
 case 'pinterest':
 					//@loserzinn 
 					client.updatePresence(from, Presence.composing) 
