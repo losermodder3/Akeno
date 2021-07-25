@@ -1266,7 +1266,7 @@ case 'wikipedia':
           case '☻':
 case 'brotei':
   
-  if (!isRegister) return reply(mess.only.daftarB)
+  if (!isPremium) return reply(mess.only.daftarB)
 
 buf = fs.readFileSync(`./Gremory/audio2/Pa.mp4`)
 
@@ -1287,9 +1287,9 @@ client.sendMessage(from, buf, video, {
 })
 
 break
-case 'juggenaut':
+case 'akenoedit':
 case 'brotei':
-buf = fs.readFileSync(`./angelo/audio2/juggenaut.mp4`)
+buf = fs.readFileSync(`./angelo/audio2/akeno.mp4`)
 
 client.sendMessage(from, buf, video, {
 
