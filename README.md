@@ -36,9 +36,11 @@ Para o bot não cair use
 > depois = pm2 monit
 ```
 
-## youtube
-* <a href="https://youtube.com/channel/UCOjRuKF7S9_y188FQ_F5CbQ"><img alt="YOUTUBE" src="https://img.shields.io/badge/adiwajshing/Baileys%20-%23121011.svg?&style=for-the-badge&logo=github&logoColor=red"/></a>
+## YouTube
+* [![YOUTUBE](https://img.shields.io/badge/adiwajshing/Baileys%20-%23121011.svg?&style=for-the-badge&logo=github&logoColor=red)](https://youtube.com/channel/UCOjRuKF7S9_y188FQ_F5CbQ)
+
 ## Grupo do loserzinn
-* <a href="https://chat.whatsapp.com/IUW4JzfK71eKgkRIUDPfsf"><img alt="WhatsApp" src="https://img.shields.io/badge/WhatsApp%20Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
+* [![WhatsApp Group](https://img.shields.io/badge/WhatsApp%20Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/IUW4JzfK71eKgkRIUDPfsf)
+
 
 
